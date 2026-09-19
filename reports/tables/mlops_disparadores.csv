@@ -1,0 +1,9 @@
+dimensión,disparador,acción,sección
+Calibración,"Observado / predicho de la cosecha fuera de [0.85, 1.15] dos meses seguidos",Recalibrar Platt con la ventana más reciente,6.7
+Calibración,Pérdida esperada de la cosecha por encima de 3.34% (verde restateado),Revisar calibración antes que el punto de corte,6.12
+Discriminación,Gini de la cosecha por debajo de 0.30 (piso de la banda histórica 0.35-0.49),"Investigar; si persiste dos cosechas, reentrenar",6.7
+Estabilidad,"PSI del score por encima de 0.10, o de una variable del scorecard por encima de 0.25",Investigar el cambio de mezcla; reentrenar si es estructural,6.7
+Población,Tasa de faltantes de buró o ingreso por encima del doble de lo histórico,Revisar la fuente antes de tocar el modelo,6.3
+Severidad,LGD o factor de exposición de la cosecha fuera de ±5 pp de lo estimado,Reestimar EAD y LGD y actualizar la capa de Expected Loss,6.10 y 6.11
+Fairness,AIR por región o por ingreso en efectivo por debajo de 0.80 dos meses seguidos,Revisar la política de verificación; escalar al Comité,6.8
+Negocio,Cola de revisión manual por encima del 20% de las solicitudes,Priorizar por valor esperado y evaluar capacidad,6.9

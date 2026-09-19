@@ -1,0 +1,5 @@
+fusion_por_significancia,tramos_bureau_score,tramos_dti_post,tramos_ahorro_sobre_monto,gini_2021_2022,gini_2023,puntajes_distintos_2023,orden_2023_bureau_score,orden_2023_dti_post,orden_2023_ahorro_sobre_monto
+"Sí, alfa 0.05",4,2,1,0.3944528095726678,0.3949571737648556,22,-1.0,,
+"Sí, alfa 0.1",4,3,2,0.4222220741668552,0.42184582555348094,47,-1.0,-1.0,
+"Sí, alfa 0.2",4,3,2,0.4222220741668552,0.42184582555348094,47,-1.0,-1.0,
+No,5,4,4,0.42490483741299867,0.4331377256157196,112,-0.9999999999999999,-1.0,-0.7999999999999999

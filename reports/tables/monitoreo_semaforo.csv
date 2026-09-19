@@ -1,0 +1,10 @@
+tipo,indicador,2025Q1,2025Q2,2025Q3,2025Q4
+Datos,PSI de una variable del scorecard,Verde,Verde,Verde,Verde
+Datos,PSI del score,Verde,Verde,Verde,Verde
+Datos,Tasa de faltantes de buró,Verde,Verde,Verde,Verde
+Modelo,Gini de la cosecha,Verde,Verde,Verde,Verde
+Modelo,KS de la cosecha,Verde,Verde,Verde,Verde
+Modelo,Observado / predicho,Verde,Verde,Verde,Verde
+Negocio,Cola de revisión manual,Ámbar,Ámbar,Ámbar,Rojo
+Negocio,Default 12m de la cosecha,Rojo,Ámbar,Ámbar,Rojo
+Negocio,Pérdida esperada / monto,Verde,Verde,Verde,Verde

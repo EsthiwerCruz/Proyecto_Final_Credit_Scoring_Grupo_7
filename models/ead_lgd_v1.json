@@ -1,0 +1,30 @@
+{
+  "version": "ead_lgd_v1",
+  "secciones": [
+    "6.10",
+    "6.11"
+  ],
+  "poblacion": {
+    "defaults": 671,
+    "dev": 351,
+    "val": 161,
+    "oot": 159
+  },
+  "ead": {
+    "metodo": "baseline global (factor sobre monto desembolsado)",
+    "factor": 0.4154,
+    "mae_val": 0.159,
+    "nota": "no se usa CCF: el producto es amortizable sin línea (ccf_observed vacío)"
+  },
+  "lgd": {
+    "metodo": "baseline global",
+    "lgd_contable": 0.6164,
+    "lgd_economica_10": 0.6545,
+    "lgd_downturn_dev_val": 0.626,
+    "mae_val": 0.1254
+  },
+  "confirmacion_oot": {
+    "ead_ratio": 0.4301,
+    "lgd": 0.6339
+  }
+}

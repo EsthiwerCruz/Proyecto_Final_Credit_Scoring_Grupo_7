@@ -1,0 +1,70 @@
+{
+  "entorno": "Development",
+  "modelos": [
+    {
+      "nombre": "challenger_lgbm",
+      "archivo": "challenger_lgbm_v1.joblib",
+      "version": "1.0",
+      "estado": "challenger",
+      "seccion": "6.6",
+      "descripcion": "LightGBM monótono con veto de fairness; en seguimiento",
+      "dueño": "Equipo de Credit Risk Analytics",
+      "entrenado_con": "DEV 2021-2023",
+      "registrado_el": "2026-09-19",
+      "sha256": "368ec551d8468d17e11a255dbca06dd49a439ba9073d6166ba844f000f7c9df1",
+      "bytes": 184588
+    },
+    {
+      "nombre": "scorecard_pd",
+      "archivo": "scorecard_pd_v1.json",
+      "version": "1.0",
+      "estado": "champion",
+      "seccion": "6.5",
+      "descripcion": "Scorecard WOE de 3 características; PD de desarrollo",
+      "dueño": "Equipo de Credit Risk Analytics",
+      "entrenado_con": "DEV 2021-2023",
+      "registrado_el": "2026-09-19",
+      "sha256": "1516e158feace528703e84c79d2d8250db69c95fbd69a317311567b43ecae858",
+      "bytes": 1961
+    },
+    {
+      "nombre": "calibrador_platt",
+      "archivo": "calibrador_platt_v1.json",
+      "version": "1.0",
+      "estado": "soporte",
+      "seccion": "6.7",
+      "descripcion": "Calibración de la PD a nivel de producción (ajustada en VAL)",
+      "dueño": "Equipo de Credit Risk Analytics",
+      "entrenado_con": "DEV 2021-2023",
+      "registrado_el": "2026-09-19",
+      "sha256": "026cd6052cba805e1b39a3379c03ee61cd6faa1fefdb4f37d885f0f918b7319c",
+      "bytes": 384
+    },
+    {
+      "nombre": "ead_lgd",
+      "archivo": "ead_lgd_v1.json",
+      "version": "1.0",
+      "estado": "soporte",
+      "seccion": "6.10 y 6.11",
+      "descripcion": "Factor de exposición y LGD (baselines globales)",
+      "dueño": "Equipo de Credit Risk Analytics",
+      "entrenado_con": "DEV 2021-2023",
+      "registrado_el": "2026-09-19",
+      "sha256": "5aa19cd13c3c7086157affe24531b8b2e66aa0850cef34415ff8d8fb39a04007",
+      "bytes": 618
+    },
+    {
+      "nombre": "politica_decision",
+      "archivo": "politica_decision_v1.json",
+      "version": "1.0",
+      "estado": "soporte",
+      "seccion": "6.9",
+      "descripcion": "Umbrales, reglas y supuestos económicos del motor",
+      "dueño": "Equipo de Credit Risk Analytics",
+      "entrenado_con": "DEV 2021-2023",
+      "registrado_el": "2026-09-19",
+      "sha256": "24a94a6ce10747bc14b4079f3d369cfbf31592df8d13d61bdc14fed1be1fca19",
+      "bytes": 1455
+    }
+  ]
+}

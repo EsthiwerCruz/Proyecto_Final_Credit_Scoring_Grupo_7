@@ -1,0 +1,1390 @@
+decision,motivo,pd_calibrada,monto_recomendado,contraoferta,tasa_recomendada
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08662858377134064,4300.0,True,0.24052993147383822
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,7144.85,False,0.1920958527792589
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.06116344670242508,6386.5,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,6400.0,True,0.1855034392976207
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,5255.08,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.14301524644733504,6183.07,False,0.2264734865487213
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,5584.65,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REJECT,PD calibrada >= 20%,0.4185570944221592,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11843367781211596,4500.0,True,0.27009594689414296
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,4211.58,False,0.21316054249977834
+APPROVE,Riesgo y capacidad dentro del apetito,0.1255029305755342,7800.79,False,0.18916688106575413
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.16894366148278292,1800.0,True,0.31705002771439494
+REJECT,PD calibrada >= 20%,0.21157139810318498,,True,
+REJECT,PD calibrada >= 20%,0.24547400357095442,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,2916.22,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3504.85,False,0.2605027172205263
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5279.22,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,4190.13,False,0.3384315503087229
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,1400.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08662858377134064,5500.0,True,0.2136866209825588
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11292209408378659,3858.8,True,0.21248618933014402
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,5094.44,False,0.19794952904566943
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.10182617221126256,7118.63,False,0.25465760968758966
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,2573.38,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,2960.6,False,0.18646988234633982
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1757620037320268,2493.73,True,0.26892557244619475
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,10848.54,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,6616.29,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08086911993666611,2900.0,True,0.1975879669465624
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,1300.0,True,0.21318301259915667
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,1988.9,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,4156.92,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,12731.31,False,0.23537703791539472
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,3308.9,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.17421456415943257,3300.0,True,0.267966572561739
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.06116344670242508,20796.96,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05452509506065575,3700.0,True,0.18534326418419278
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.13041144168753702,6054.47,True,0.1802050793654557
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,13860.03,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2157.77,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08086911993666611,0.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,7688.57,False,0.31075407583078946
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,5684.75,False,0.18
+REJECT,PD calibrada >= 20%,0.3650013949605897,,True,
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.17942944535728508,1400.0,True,0.3267976124041322
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,5902.94,False,0.2605027172205263
+APPROVE,Riesgo y capacidad dentro del apetito,0.10257995658378173,5382.3,False,0.1917861092134278
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,1300.0,True,0.31954903779746996
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08086911993666611,0.0,True,0.1850586446310416
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,5422.94,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,6373.59,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,14446.41,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.14401628565861818,15500.0,True,0.2046258463827505
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,8981.21,False,0.2241917055585178
+REJECT,PD calibrada >= 20%,0.3650013949605897,,True,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.10357955931344313,12237.11,False,0.20814377916888838
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4862.39,False,0.18512567930513157
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.05803078157896433,10521.03,False,0.1869727072779026
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.17942944535728508,1300.0,True,0.2433988062020661
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,7260.56,False,0.18
+REJECT,PD calibrada >= 20%,0.21847719128066997,,False,
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,16538.63,False,0.18008337290751147
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,7731.77,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.10345303619714179,7000.0,True,0.256169942448863
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,1047.08,False,0.18008337290751147
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,3389.73,False,0.2749809786921824
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,8100.0,True,0.23349291437898717
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,7108.18,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.17421456415943257,1000.0,True,0.3219498588426085
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,7141.1,False,0.2280091714603219
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1716319253415125,3000.0,True,0.31954903779746996
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,10800.0,True,0.2039878365060256
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,11365.07,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,9882.89,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,6003.9,False,0.19082744079192793
+REJECT,PD calibrada >= 20%,0.21847719128066997,,True,
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+REJECT,PD calibrada >= 20%,0.21847719128066997,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,2799.87,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11292209408378659,15354.5,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,5243.56,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,6957.06,False,0.2605027172205263
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.16217090773535875,24208.19,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,4016.75,False,0.18
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,2400.0,True,0.25212248128908393
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5050.47,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09472039455474367,4164.87,False,0.21870138585205978
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,5000.0,True,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.17421456415943257,13000.0,True,0.20048746471065215
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1255029305755342,4100.0,True,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10257995658378173,2040.09,False,0.20767916382014173
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,6107.87,False,0.1820338874026992
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,8307.71,False,0.18
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,4800.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09944316806769453,6100.0,True,0.1908141230119096
+REJECT,PD calibrada >= 20%,0.2285270347601604,,False,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.13749984842308408,4200.0,True,0.28781985909409896
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,5100.0,True,0.21749048934609122
+APPROVE,Riesgo y capacidad dentro del apetito,0.05803078157896433,9620.08,False,0.1869727072779026
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1255029305755342,2200.0,True,0.18916688106575413
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,10732.66,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,5474.94,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.08581046069287214,11500.0,True,0.2131796028400626
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12364822372607316,3253.09,False,0.1983144629252525
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2451.16,False,0.18
+REJECT,PD calibrada >= 20%,0.2649169203745012,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,5506.21,False,0.18
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,9403.53,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,5898.87,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,2990.28,False,0.23537703791539472
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.24484703505325314,0.0,True,0.3876098037855041
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,3702.53,False,0.19400458573016094
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,5400.0,True,0.25212248128908393
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.11532171671557931,8172.22,False,0.21360153392940123
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,13007.68,False,0.19367972337991202
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,2778.51,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,8968.24,False,0.2031178670095684
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,2379.18,False,0.19082744079192793
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,9305.47,False,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.08581046069287214,5700.0,True,0.2397694042600939
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.0702888664625709,27100.0,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,4871.11,False,0.23058635292357288
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,3000.0,True,0.1802050793654557
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,14896.37,False,0.20814377916888838
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05452509506065575,5200.0,True,0.18534326418419278
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,6978.43,False,0.21025135861026317
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,5200.0,True,0.22909186096681294
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09944316806769453,2400.0,True,0.20622118451786442
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,12493.54,False,0.18
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,9447.03,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14195730369844747,3941.67,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,7163.14,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,8163.99,False,0.2605027172205263
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06564355130520311,7822.88,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,1500.0,True,0.22261573991131017
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3234.39,False,0.18
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+REJECT,PD calibrada >= 20%,0.20272215589365208,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1757620037320268,2900.0,True,0.24169417933464604
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,4140.63,False,0.24623573401913684
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,8526.38,False,0.20621972816185435
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4317.36,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,16670.05,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,9557.84,False,0.18
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,4803.62,False,0.18310986408092716
+REJECT,PD calibrada >= 20%,0.21847719128066997,,True,
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,2713.15,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,1800.0,True,0.18087191330377006
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,4968.02,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,2773.05,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,6938.46,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,0.0,True,0.22261573991131017
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,2205.07,False,0.2395870004094327
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,12500.0,True,0.19400458573016094
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.06116344670242508,5591.53,False,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.04974307356700933,10632.24,False,0.18312058059394593
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.12572477515560407,7492.93,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,6530.29,False,0.18
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,9160.64,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,0.0,True,0.2579905525053162
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14195730369844747,6192.58,True,0.2039878365060256
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.1296259008660379,21105.68,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,4291.38,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,9399.86,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,14300.0,True,0.19400458573016094
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.16876728685755563,4300.0,True,0.19922151746569594
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,5952.11,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,6753.17,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,4045.55,False,0.2280091714603219
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.23853289183132115,4078.11,False,0.19695669604106603
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12135201587940078,1612.2,False,0.18820220849037272
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14864858211448576,12513.59,True,0.18
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,4100.0,True,0.1869727072779026
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,3192.22,False,0.22025011872253442
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,9095.2,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,4051.99,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.17010019842363625,6800.0,True,0.3181251444546122
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11843367781211596,2500.0,True,0.19669864896471434
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.08577970498027913,21368.61,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11843367781211596,16825.88,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5025.27,False,0.18312058059394593
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.11532171671557931,9845.81,False,0.2672030678588025
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14974768898063848,8100.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.15357106194938477,9749.94,False,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.11970703531314097,10900.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,3800.0,True,0.21559920413471073
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,2506.24,False,0.31075407583078946
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,12323.7,False,0.19794952904566943
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,0.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14913413691924535,11500.0,True,0.2524233957867536
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,1496.87,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.1317684200835215,9038.75,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,4900.0,True,0.24082031746182292
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,3856.44,False,0.20621972816185435
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,1875.95,False,0.21059937206089258
+APPROVE,Riesgo y capacidad dentro del apetito,0.1255029305755342,2704.98,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,4909.12,False,0.22050370052661422
+REJECT,PD calibrada >= 20%,0.35476993132335255,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,6300.0,True,0.21559920413471073
+REJECT,PD calibrada >= 20%,0.21847719128066997,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,2100.0,True,0.18087191330377006
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,2411.01,False,0.18529968603044628
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,2306.21,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,5163.72,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2627.72,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,9853.32,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,0.0,True,0.18
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.13139651508841227,9300.0,True,0.18035770007103136
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,10300.0,True,0.1929908773795192
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,6706.9,False,0.18646988234633982
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,7935.28,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,6600.0,True,0.18
+REJECT,PD calibrada >= 20%,0.21847719128066997,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,7300.0,True,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,6671.01,False,0.19367972337991202
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.09944316806769453,1680.87,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,1200.0,True,0.31954903779746996
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1255029305755342,13625.3,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,3609.39,False,0.27895436687248193
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,7739.39,False,0.19599207633773014
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14974768898063848,14500.0,True,0.19480136291910038
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,9526.88,False,0.24623573401913684
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,4939.71,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.1177164940342813,1700.0,True,0.21471462642713396
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,3800.0,True,0.22598175475903837
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,4555.69,False,0.21059937206089258
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.15811728566907743,6700.0,True,0.2579905525053162
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.08577970498027913,31781.72,False,0.1998704068748337
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,2800.0,True,0.2397694042600939
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,1916.69,False,0.21316054249977834
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,4264.13,False,0.18312058059394593
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,5500.0,True,0.19596360970387017
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,2762.89,False,0.18
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09472039455474367,3000.0,True,0.18201301969452244
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.10345303619714179,1000.0,True,0.20808497122443148
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11843367781211596,1000.0,True,0.23339729792942865
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.15357106194938477,4034.77,False,0.18
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,9137.43,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,6446.94,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,4124.44,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.06735772365674504,4800.0,True,0.22261573991131017
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,4421.35,False,0.19012505936126722
+APPROVE,Riesgo y capacidad dentro del apetito,0.14974768898063848,8788.04,False,0.18320090861273358
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,7100.0,True,0.22598175475903837
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,1012.8,False,0.210519585069868
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14401628565861818,3600.0,True,0.29387753914825143
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,1592.17,False,0.19082744079192793
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,5814.12,False,0.18
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,0.0,True,0.21559920413471073
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,14939.66,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,7701.09,False,0.19400458573016094
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,6675.24,False,0.1827111449820792
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,9721.43,False,0.31075407583078946
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.17942944535728508,5600.0,True,0.21559920413471073
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.10182617221126256,3199.94,False,0.1836644024218974
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,12998.81,False,0.18
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,1300.0,True,0.21318301259915667
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,3757.09,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,10059.79,False,0.22050370052661422
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.1255029305755342,13900.0,True,0.18916688106575413
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08662858377134064,2200.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,5200.0,True,0.2131796028400626
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,8432.77,False,0.20621972816185435
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13139651508841227,3700.0,True,0.19053655010654702
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,1800.0,True,0.2749809786921824
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,7099.02,False,0.22025011872253442
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1716319253415125,1600.0,True,0.31954903779746996
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,6867.56,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08086911993666611,0.0,True,0.21011728926208317
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,4760.78,False,0.18
+REJECT,PD calibrada >= 20%,0.21847719128066997,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,14025.55,False,0.19794952904566943
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09472039455474367,5400.0,True,0.2480520787780897
+REJECT,PD calibrada >= 20%,0.20272215589365208,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.14974768898063848,2609.26,False,0.22960272583820074
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2701.29,False,0.18
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,4540.5,False,0.18
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,2873.96,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,4084.28,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,6200.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11292209408378659,4014.62,True,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.2089898425019386,2300.0,True,0.25713847879490104
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.08423257861242901,11482.92,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,10628.69,False,0.18
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1262631774994407,3600.0,True,0.27737424980348
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14913413691924535,6700.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,5290.72,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,13239.5,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,5219.53,False,0.19012505936126722
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,4064.61,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08086911993666611,0.0,True,0.1850586446310416
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,1200.0,True,0.20169940310103307
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.17421456415943257,3400.0,True,0.18699164314043476
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,11103.39,False,0.24921577515436144
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1757620037320268,5146.48,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,5142.37,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.06116344670242508,1255.68,False,0.18
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,4539.08,False,0.18658027124988918
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,0.0,True,0.22261573991131017
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,11558.61,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11843367781211596,2500.0,True,0.19669864896471434
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06972513957052977,2534.98,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3414.25,False,0.18512567930513157
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,8706.4,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,8825.35,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,3000.0,True,0.22598175475903837
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,2482.47,False,0.18
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,6993.15,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,4257.68,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,1800.0,True,0.19454593048340646
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,7247.74,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,6700.0,True,0.24082031746182292
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,7629.25,False,0.20814377916888838
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.14777910124213986,7196.53,False,0.18289590875244888
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14401628565861818,4600.0,True,0.29387753914825143
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2595.14,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,1819.05,False,0.1820338874026992
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.15313118538517564,7053.24,False,0.18
+REJECT,PD calibrada >= 20%,0.2987073992799683,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,9500.0,True,0.22261573991131017
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,2267.66,False,0.19367972337991202
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.14974768898063848,29458.06,False,0.2064018172254672
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.13139651508841227,8800.0,True,0.18
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1255029305755342,7000.0,True,0.18916688106575413
+APPROVE,Riesgo y capacidad dentro del apetito,0.12419059597770725,14020.71,False,0.19848252600695887
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,6526.81,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,11041.75,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11857238002967763,3931.07,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,16954.5,False,0.18
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,6773.59,False,0.18
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11970703531314097,5900.0,True,0.21563983001354792
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,9829.49,False,0.18525979253493402
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,3980.54,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,2721.54,False,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.05803078157896433,13470.33,False,0.18
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,3947.96,False,0.1827111449820792
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,8320.73,False,0.18
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,6466.86,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,2869.03,False,0.20406777480539845
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,0.0,True,0.23349291437898717
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,7182.2,False,0.2605027172205263
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,2000.0,True,0.23349291437898717
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.17942944535728508,4200.0,True,0.3267976124041322
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.15811728566907743,9100.0,True,0.30698582875797437
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,6924.99,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,6178.96,False,0.1820338874026992
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.1873129824957396,23200.0,True,0.276084099018693
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.1716319253415125,6000.0,True,0.31954903779746996
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,5504.12,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.13041144168753702,4194.37,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,10675.65,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,3700.0,True,0.23977451889873497
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11970703531314097,1700.0,True,0.2712796600270958
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13425760662258976,1700.0,True,0.2848058711163594
+APPROVE,Riesgo y capacidad dentro del apetito,0.13139651508841227,6849.21,False,0.28214620042618804
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,8552.95,False,0.18937851653693233
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,11711.98,False,0.1920958527792589
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,1606.44,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.09962419598357193,7119.59,False,0.2217404350575523
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.06972513957052977,3900.0,True,0.2032109931631763
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,2681.34,False,0.1887452446730456
+REJECT,PD calibrada >= 20%,0.21157139810318498,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04677238966639513,13407.92,False,0.18173980671694046
+REJECT,PD calibrada >= 20%,0.21847719128066997,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,2515.7,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,16816.87,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09944316806769453,5900.0,True,0.2524423690357288
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,5000.0,True,0.2812304761927344
+REJECT,PD calibrada >= 20%,0.20272215589365208,,True,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.06972513957052977,22544.65,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,14085.84,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2249.41,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08662858377134064,3898.67,False,0.2136866209825588
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08581046069287214,1700.0,True,0.2397694042600939
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.10257995658378173,32873.41,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4588.21,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,8617.66,False,0.18008337290751147
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08581046069287214,1000.0,True,0.2397694042600939
+REJECT,PD calibrada >= 20%,0.2987073992799683,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,2639.38,False,0.2805002374450688
+REJECT,PD calibrada >= 20%,0.21847719128066997,,True,
+REJECT,PD calibrada >= 20%,0.21157139810318498,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,7500.0,True,0.24797567301205115
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,11643.75,False,0.2605027172205263
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06972513957052977,6829.59,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,5975.83,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,1500.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,3665.12,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,10617.63,False,0.20814377916888838
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,8536.21,False,0.19768851895769735
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.17942944535728508,2500.0,True,0.3267976124041322
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08086911993666611,7500.0,True,0.21011728926208317
+REJECT,PD calibrada >= 20%,0.2537932287829739,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,2685.52,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,4734.96,False,0.18077685818338524
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,7800.0,True,0.25212248128908393
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,6854.74,False,0.20406777480539845
+APPROVE,Riesgo y capacidad dentro del apetito,0.15357106194938477,12480.16,False,0.18379327653135802
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,7258.43,False,0.18
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3889.7,False,0.2605027172205263
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,5896.91,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,7161.16,False,0.18230394378859038
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,4953.57,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,8978.22,False,0.19768851895769735
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,7121.13,False,0.18
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,4852.04,False,0.18525979253493402
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.4185570944221592,,True,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.15811728566907743,27400.0,True,0.30698582875797437
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,6410.77,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,6744.22,False,0.21059937206089258
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11843367781211596,3013.29,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.15811728566907743,4000.0,True,0.2579905525053162
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05452509506065575,1000.0,True,0.19379101891225703
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,3681.07,False,0.18
+REJECT,PD calibrada >= 20%,0.3650013949605897,,True,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.06972513957052977,11300.0,True,0.19240824487238223
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3184.45,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,8500.0,True,0.2812304761927344
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.10329309685804094,2000.0,True,0.19200708761307828
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,4101.15,False,0.18
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,16498.76,False,0.18525979253493402
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.09115564419099226,6767.63,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.05803078157896433,2690.3,False,0.1869727072779026
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,4965.17,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,4454.65,False,0.1820338874026992
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11305516926420771,5100.0,True,0.23006405689867165
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,5329.49,False,0.18937851653693233
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.14913413691924535,22900.0,True,0.2986350936801304
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,5865.68,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,2103.12,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,2400.0,True,0.2131796028400626
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,3258.46,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,9430.02,False,0.18973859171812046
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,6671.33,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10257995658378173,13851.7,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,11200.0,True,0.24623573401913684
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.06036269510469811,20229.09,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11843367781211596,6200.0,True,0.2150479734470715
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,12363.79,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,4714.69,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.16262775192030632,5200.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,3600.0,True,0.22061523809636718
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,3328.06,False,0.24813554961079692
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,6034.46,False,0.18937851653693233
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,2472.69,False,0.23974081374966744
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.10869101779231505,10018.02,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.15811728566907743,9200.0,True,0.2579905525053162
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,5504.66,False,0.19768851895769735
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,7570.8,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14913413691924535,4701.58,True,0.1831058489466884
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,0.0,True,0.2382494998689867
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1406454429570923,5300.0,True,0.2253720018864565
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,4781.88,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,3227.8,False,0.210519585069868
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12135201587940078,9315.09,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.14913413691924535,4935.72,False,0.2062116978933768
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,4500.37,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,8448.46,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,1372.26,False,0.24813554961079692
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,2773.96,False,0.23537703791539472
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14301524644733504,11400.0,True,0.19323674327436063
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.06972513957052977,2000.0,True,0.19240824487238223
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,2510.85,False,0.24033349163004586
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,6300.0,True,0.22598175475903837
+REJECT,PD calibrada >= 20%,0.20272215589365208,,True,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.1296259008660379,18449.1,False,0.20016674581502292
+APPROVE,Riesgo y capacidad dentro del apetito,0.04677238966639513,4924.67,False,0.18898640895592062
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,10682.19,False,0.1840718895844442
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,2321.77,False,0.1820338874026992
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11970703531314097,4600.0,True,0.21563983001354792
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,4701.68,False,0.21875703307386463
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,1700.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,13380.25,False,0.18512567930513157
+REJECT,PD calibrada >= 20%,0.2537932287829739,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,6047.89,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,0.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,0.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14195730369844747,13231.4,True,0.1929908773795192
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.08581046069287214,5400.0,True,0.2397694042600939
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.1255029305755342,13264.98,False,0.18
+REJECT,PD calibrada >= 20%,0.4185570944221592,,True,
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.19413008407613813,3957.82,False,0.19007722102619634
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,3900.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08581046069287214,4700.0,True,0.2397694042600939
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,3200.0,True,0.27737424980348
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,6375.72,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,2600.0,True,0.25212248128908393
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3139.72,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.10182617221126256,17174.67,False,0.1915525365625299
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.24484703505325314,4000.0,True,0.311739869190336
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+REJECT,PD calibrada >= 20%,0.3050933761101073,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5202.84,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,1300.0,True,0.18
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.16217090773535875,15111.59,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,3979.11,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,2900.0,True,0.19988725944936747
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,14275.56,False,0.22735944675982406
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,4413.95,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,0.0,True,0.22261573991131017
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.04677238966639513,902.43,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10257995658378173,1047.97,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,2477.05,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,5700.0,True,0.29196350951807676
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,9442.54,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,3738.43,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,9367.45,False,0.1920958527792589
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,3648.68,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.06735772365674504,7800.0,True,0.20174382660754014
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5658.67,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,8294.18,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,14929.24,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.054593586534063585,10700.0,True,0.21075019804206552
+APPROVE,Riesgo y capacidad dentro del apetito,0.054593586534063585,10599.63,False,0.21075019804206552
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14401628565861818,0.0,True,0.29387753914825143
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,4526.96,False,0.18
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,0.0,True,0.19988470213004694
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09944316806769453,1900.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,5025.28,False,0.18937851653693233
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,5310.84,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08662858377134064,2000.0,True,0.1868433104912794
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,4745.44,False,0.18937851653693233
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,1854.33,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,7291.22,False,0.1840718895844442
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,3614.24,False,0.18008337290751147
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08662858377134064,5917.82,False,0.1868433104912794
+REVIEW,PD calibrada entre 18% y 20%,0.1873129824957396,7600.0,True,0.3341261485280395
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,2900.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,9823.55,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,2000.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,5745.48,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,5598.94,False,0.18781991500677397
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12135201587940078,2077.75,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08662858377134064,2161.57,False,0.24052993147383822
+APPROVE,Riesgo y capacidad dentro del apetito,0.10257995658378173,3409.35,False,0.22357221842685565
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,4500.0,True,0.2981837219336259
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,9800.0,True,0.20041015873091145
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,1600.0,True,0.20169940310103307
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,7571.95,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09472039455474367,5877.12,False,0.21870138585205978
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,5834.87,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357625532377368,17505.5,False,0.19209482898299335
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.0702888664625709,5400.0,True,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.10456323261878313,2809.25,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,3505.66,False,0.18077685818338524
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,6805.49,False,0.1920958527792589
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.16876728685755563,8451.62,True,0.18
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.17942944535728508,2200.0,True,0.27119840826942143
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3432.31,False,0.18512567930513157
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,7052.39,False,0.19979350020471637
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,6087.02,False,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.09472039455474367,9700.0,True,0.20402603938904484
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,2100.0,True,0.27119840826942143
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.28933157309352436,11617.36,False,0.2048271050579567
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1716319253415125,4900.0,True,0.2663660251983133
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09944316806769453,16185.03,False,0.18311059225893223
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,4835.64,False,0.18529968603044628
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5563.49,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2811.47,False,0.18399471755848673
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,7900.0,True,0.24623573401913684
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,15716.84,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.054593586534063585,8955.94,False,0.21075019804206552
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11843367781211596,5036.26,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3342.98,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,7600.0,True,0.23977451889873497
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,8317.47,False,0.20406777480539845
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5511.82,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,0.0,True,0.21868712490174003
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.1919444388002613,29331.18,False,0.21947718343624095
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,10309.85,False,0.23537703791539472
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,9180.92,False,0.21025135861026317
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,4621.76,False,0.22050370052661422
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.14667524174430643,4657.44,False,0.20544976824183575
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,9810.79,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,1759.9,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,4078.36,False,0.2154049551556939
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14195730369844747,10582.17,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,4432.72,False,0.18
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,8459.9,False,0.18
+REJECT,PD calibrada >= 20%,0.35476993132335255,,True,
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,10300.0,True,0.2812304761927344
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08086911993666611,8200.0,True,0.1850586446310416
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,4900.0,True,0.2812304761927344
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.17942944535728508,1800.0,True,0.27119840826942143
+APPROVE,Riesgo y capacidad dentro del apetito,0.14913413691924535,10403.08,False,0.1831058489466884
+APPROVE,Riesgo y capacidad dentro del apetito,0.12419059597770725,5610.25,False,0.27544757802087666
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1757620037320268,6372.63,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,3457.55,False,0.1998704068748337
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,4700.0,True,0.24797567301205115
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,10742.14,False,0.2805002374450688
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,6730.26,False,0.1880565806846637
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.06972513957052977,4700.0,True,0.2032109931631763
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,1600.6,False,0.18
+REJECT,PD calibrada >= 20%,0.2649169203745012,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,2726.34,False,0.23974081374966744
+REJECT,PD calibrada >= 20%,0.20272215589365208,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2070.41,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11857238002967763,11538.55,False,0.2702248844755883
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,2203.28,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.10329309685804094,3900.0,True,0.22401417522615658
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,9483.22,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,9577.06,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,5633.81,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.2062104978432824,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4720.59,False,0.2605027172205263
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,11298.36,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,8051.97,False,0.19082744079192793
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,0.0,True,0.19912474993449336
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,14500.0,True,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.06735772365674504,0.0,True,0.18087191330377006
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08581046069287214,1200.0,True,0.2131796028400626
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,17145.87,False,0.18
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,6600.0,True,0.19596360970387017
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,1429.7,False,0.1855034392976207
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,2388.7,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14301524644733504,6500.0,True,0.18215782884957377
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.06735772365674504,2200.0,True,0.22261573991131017
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,6414.25,False,0.18
+REJECT,PD calibrada >= 20%,0.3650013949605897,,True,
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.18420807874870698,4082.21,False,0.2741598866698653
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11843367781211596,5500.0,True,0.27009594689414296
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,3468.95,False,0.3384315503087229
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,9484.43,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,6919.91,False,0.18
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11292209408378659,2000.0,True,0.21248618933014402
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,9816.45,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,11200.0,True,0.2749809786921824
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,3962.1,False,0.20016674581502292
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13139651508841227,11800.0,True,0.221073100213094
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.13749984842308408,1300.0,True,0.28781985909409896
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.16217090773535875,13800.44,False,0.19768851895769735
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,3400.0,True,0.18087191330377006
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06564355130520311,4884.38,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09472039455474367,12677.17,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.12419059597770725,7033.42,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.16894366148278292,1400.0,True,0.2385250138571975
+REJECT,PD calibrada >= 20%,0.2987073992799683,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,5724.02,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,5644.61,False,0.22025011872253442
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,2381.33,False,0.1920958527792589
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,7933.97,False,0.21563983001354792
+REJECT,PD calibrada >= 20%,0.4185570944221592,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1255029305755342,5124.42,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,3584.25,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,9200.0,True,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.04974307356700933,78915.47,False,0.18
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.10345303619714179,3900.0,True,0.20808497122443148
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,1100.0,True,0.21868712490174003
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,10985.6,False,0.24033349163004586
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.054593586534063585,10100.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08662858377134064,18493.9,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,1602.84,False,0.19012505936126722
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,6237.52,False,0.18230394378859038
+APPROVE,Riesgo y capacidad dentro del apetito,0.14913413691924535,7475.92,False,0.2062116978933768
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,5400.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,11700.0,True,0.24797567301205115
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11970703531314097,3800.0,True,0.18781991500677397
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,4400.0,True,0.18
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08662858377134064,3918.99,False,0.18
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,2600.0,True,0.2579905525053162
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,7629.56,False,0.21100687859524142
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,6850.43,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.05803078157896433,15939.72,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1716319253415125,1500.0,True,0.23977451889873497
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,3189.55,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,8378.82,False,0.18399471755848673
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,4563.47,False,0.20406777480539845
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4438.27,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.13790983037993276,12570.4,False,0.28820097832118546
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,5496.92,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,5301.52,False,0.1815589335047842
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4869.12,False,0.23537703791539472
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08086911993666611,5300.0,True,0.2351759338931248
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,4118.7,False,0.19979350020471637
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,5504.2,False,0.18
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,0.0,True,0.2397694042600939
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.10345303619714179,3609.62,True,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1255029305755342,3700.0,True,0.19888917475433887
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,8395.98,False,0.18525979253493402
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,0.0,True,0.30698582875797437
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,7185.81,False,0.1855034392976207
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1716319253415125,1700.0,True,0.31954903779746996
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.17595444479610603,5600.0,True,0.1804459064853075
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3588.77,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,2860.29,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11292209408378659,2700.0,True,0.264972378660288
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,13587.98,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06972513957052977,5896.38,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,10235.87,False,0.1920958527792589
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08662858377134064,2376.14,False,0.2002649657369191
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,2045.84,False,0.2805002374450688
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.10345303619714179,8335.63,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,3400.0,True,0.19130786995565507
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,13846.99,False,0.18
+REJECT,PD calibrada >= 20%,0.2285270347601604,,False,
+REJECT,PD calibrada >= 20%,0.2649169203745012,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,13561.99,False,0.18
+REJECT,PD calibrada >= 20%,0.2649169203745012,,True,
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,2042.88,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,10204.12,False,0.18
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.17595444479610603,8400.0,True,0.2145224172941534
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11843367781211596,1989.39,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08581046069287214,1900.0,True,0.19988470213004694
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,3430.84,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.12419059597770725,5359.26,False,0.21772378901043832
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,5721.71,False,0.2241917055585178
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.15357106194938477,8899.03,False,0.207586553062716
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,3882.24,False,0.18
+REJECT,PD calibrada >= 20%,0.20272215589365208,,True,
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,7560.26,False,0.19466479612139076
+APPROVE,Riesgo y capacidad dentro del apetito,0.14913413691924535,6224.87,False,0.2524233957867536
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,10832.13,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,4649.09,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.17942944535728508,27700.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14913413691924535,3100.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09944316806769453,14584.89,False,0.20622118451786442
+APPROVE,Riesgo y capacidad dentro del apetito,0.1255029305755342,2994.25,False,0.19888917475433887
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3470.32,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.1317684200835215,14585.36,False,0.18041532055160692
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.04525607944011601,7000.0,True,0.20207005144753182
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,1800.0,True,0.2981837219336259
+REJECT,PD calibrada >= 20%,0.2987073992799683,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.13749984842308408,0.0,True,0.24521323939606599
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3042.12,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1757620037320268,5726.27,True,0.2144627862230974
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,2300.0,True,0.30698582875797437
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,2400.0,True,0.2981837219336259
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,19553.68,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.0477340761964981,1116.19,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,8092.41,False,0.21875703307386463
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.12419059597770725,45508.67,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,11643.16,False,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.16217090773535875,18941.3,False,0.19768851895769735
+APPROVE,Riesgo y capacidad dentro del apetito,0.14913413691924535,6682.06,False,0.1831058489466884
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2440.99,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.14913413691924535,8654.85,False,0.22931754684006522
+APPROVE,Riesgo y capacidad dentro del apetito,0.14913413691924535,3577.73,False,0.2524233957867536
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.038717810173978205,13287.08,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,2000.0,True,0.19988470213004694
+REJECT,PD calibrada >= 20%,0.2062104978432824,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.04525607944011601,4200.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3176.38,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,3028.39,False,0.18
+REJECT,PD calibrada >= 20%,0.2987073992799683,,True,
+REJECT,PD calibrada >= 20%,0.21157139810318498,,True,
+REJECT,PD calibrada >= 20%,0.4185570944221592,,True,
+REJECT,PD calibrada >= 20%,0.2537932287829739,,True,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,7698.46,False,0.2395870004094327
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,6885.64,False,0.21947718343624095
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,8200.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17010019842363625,0.0,True,0.18
+REJECT,PD calibrada >= 20%,0.2649169203745012,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,3454.86,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,11257.95,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05452509506065575,4200.0,True,0.21068652836838558
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,9815.61,False,0.19367972337991202
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,3224.98,False,0.19794952904566943
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.17595444479610603,4672.11,False,0.20089181297061504
+REJECT,PD calibrada >= 20%,0.20272215589365208,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,6617.96,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,5870.19,False,0.1880565806846637
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,16080.4,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,1302.7,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3809.78,False,0.18512567930513157
+APPROVE,Riesgo y capacidad dentro del apetito,0.04525607944011601,8041.35,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,3300.0,True,0.2280091714603219
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,1600.0,True,0.19988725944936747
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,3360.34,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,10970.69,False,0.19768851895769735
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,15985.95,False,0.18
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,5737.39,False,0.19768851895769735
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.10182617221126256,8217.37,False,0.18
+REJECT,PD calibrada >= 20%,0.2987073992799683,,True,
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,13304.86,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,11557.22,False,0.21875703307386463
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,7033.34,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14401628565861818,5900.0,True,0.24925169276550097
+APPROVE,Riesgo y capacidad dentro del apetito,0.09472039455474367,3700.0,False,0.21870138585205978
+REJECT,PD calibrada >= 20%,0.2649169203745012,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,10473.95,False,0.18512567930513157
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,3819.52,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,6892.26,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,18636.85,False,0.18
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09944316806769453,6127.97,False,0.18311059225893223
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09472039455474367,3100.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,7420.99,False,0.19367972337991202
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,4380.42,False,0.23974081374966744
+APPROVE,Riesgo y capacidad dentro del apetito,0.12419059597770725,7762.52,False,0.18
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4130.51,False,0.18512567930513157
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,4973.08,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.1301714727336795,24162.01,False,0.18016790017553808
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,2857.56,False,0.1902815266427722
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,6673.12,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,1200.0,True,0.2579905525053162
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14195730369844747,5661.03,True,0.1929908773795192
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08662858377134064,5037.89,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,2670.64,False,0.18512567930513157
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,2975.47,False,0.24813554961079692
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,9284.54,False,0.2712796600270958
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,3255.99,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,3479.31,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,1966.44,False,0.19082744079192793
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,5390.44,False,0.18310986408092716
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,6102.44,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,0.0,True,0.21868712490174003
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,4800.0,True,0.2433988062020661
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.1296259008660379,18143.28,False,0.19012505936126722
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.20565647914252028,8005.56,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.15357106194938477,5087.06,False,0.18379327653135802
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1716319253415125,1300.0,True,0.31954903779746996
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,0.0,True,0.23349291437898717
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5664.06,False,0.18312058059394593
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,6571.19,False,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.10357955931344313,14289.97,False,0.1920958527792589
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,4185.01,False,0.22735944675982406
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,10168.82,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,0.0,True,0.19130786995565507
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,6500.0,True,0.29196350951807676
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5925.36,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.2089898425019386,0.0,True,0.1923794929316337
+REJECT,PD calibrada >= 20%,0.24547400357095442,,True,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14913413691924535,8500.0,True,0.1831058489466884
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,4964.96,False,0.21749048934609122
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,5186.96,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.16894366148278292,14900.0,True,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.13981508649880056,3100.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,9017.28,False,0.19768851895769735
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,0.0,True,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.05803078157896433,13504.06,False,0.19596360970387017
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,5297.32,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09472039455474367,4524.2,False,0.1893506929260299
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.10357955931344313,10780.68,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,9642.81,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11305516926420771,3400.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1757620037320268,8200.0,True,0.24169417933464604
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,4222.58,False,0.18312058059394593
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,5373.44,False,0.21749048934609122
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,3235.15,False,0.18399471755848673
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,4100.0,True,0.22598175475903837
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,1500.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14913413691924535,3200.0,True,0.2062116978933768
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,2915.07,False,0.19012505936126722
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,10065.48,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,3300.0,True,0.19400458573016094
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,3910.86,False,0.18
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,2750.85,False,0.18008337290751147
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,10396.55,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4975.26,False,0.21025135861026317
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,4419.91,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3108.17,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1301714727336795,16545.02,False,0.20033580035107612
+REJECT,PD calibrada >= 20%,0.20272215589365208,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,8799.61,False,0.18512567930513157
+REJECT,PD calibrada >= 20%,0.21847719128066997,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,7512.11,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.13139651508841227,6319.19,False,0.18035770007103136
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,5710.52,False,0.19082744079192793
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.09481018675860255,23427.41,False,0.18937851653693233
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,4314.68,False,0.18658027124988918
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14195730369844747,8455.27,True,0.1819939182530128
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.10357955931344313,25365.22,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.1757620037320268,28708.02,True,0.200847089667323
+APPROVE,Riesgo y capacidad dentro del apetito,0.05803078157896433,9065.04,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,7541.77,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,6488.68,False,0.18310986408092716
+APPROVE,Riesgo y capacidad dentro del apetito,0.04677238966639513,13176.0,False,0.18
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.11389794469165165,28926.98,False,0.21293976469267967
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.10329309685804094,16700.0,True,0.18400531570980871
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,6561.55,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,6731.89,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,7489.72,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.15357106194938477,28857.24,False,0.18379327653135802
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.04974307356700933,10294.97,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,14994.81,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.11878363788860385,3905.94,False,0.18
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.11389794469165165,14444.2,False,0.18646988234633982
+APPROVE,Riesgo y capacidad dentro del apetito,0.0702888664625709,17353.0,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,9922.64,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,8000.0,True,0.20169940310103307
+REJECT,PD calibrada >= 20%,0.21157139810318498,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,6834.48,False,0.18
+REJECT,PD calibrada >= 20%,0.2062104978432824,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,3095.3,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.11305516926420771,7175.31,False,0.18627402133700188
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.2089898425019386,8400.0,True,0.28951797172653476
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14401628565861818,4600.0,True,0.29387753914825143
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,4250.41,False,0.21563983001354792
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,12047.22,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,2726.7,False,0.19082744079192793
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,9352.2,False,0.18984512515353724
+REJECT,PD calibrada >= 20%,0.2987073992799683,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08581046069287214,1300.0,True,0.2397694042600939
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,7000.0,True,0.2981837219336259
+REJECT,PD calibrada >= 20%,0.2649169203745012,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06972513957052977,9579.71,True,0.18
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14401628565861818,2588.81,True,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.1177164940342813,14952.86,False,0.21471462642713396
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13749984842308408,1200.0,True,0.28781985909409896
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1496939945671381,2300.0,True,0.29915553734961153
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3314.73,False,0.23537703791539472
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,5418.38,False,0.1840718895844442
+APPROVE,Riesgo y capacidad dentro del apetito,0.11970703531314097,6171.46,False,0.23418644001806388
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10257995658378173,1414.61,False,0.18383958191007088
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.19413008407613813,2686.6,False,0.25023166307858896
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3683.8,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.13041144168753702,7727.52,True,0.1802050793654557
+REJECT,PD calibrada >= 20%,0.24547400357095442,,True,
+REJECT,PD calibrada >= 20%,0.35476993132335255,,True,
+REJECT,PD calibrada >= 20%,0.2285270347601604,,True,
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,8975.27,False,0.19400458573016094
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,6415.03,False,0.2241917055585178
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,4732.25,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,3300.0,True,0.2812304761927344
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3529.92,False,0.19768851895769735
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,14000.0,True,0.1815589335047842
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,5505.94,False,0.18
+REJECT,PD calibrada >= 20%,0.21157139810318498,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,0.0,True,0.30698582875797437
+APPROVE,Riesgo y capacidad dentro del apetito,0.11389794469165165,4526.04,False,0.19529317646178646
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.10329309685804094,1300.0,True,0.19200708761307828
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,4223.21,False,0.21025135861026317
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.14777910124213986,4803.01,False,0.25158363500979547
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.1549596236689561,4644.72,False,0.18400841102711024
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06735772365674504,0.0,True,0.22261573991131017
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,4440.19,False,0.18658027124988918
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,2776.86,False,0.18512567930513157
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3563.06,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,7844.52,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.05803078157896433,17058.58,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.04525607944011601,1200.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,2300.0,True,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,5321.81,False,0.1902815266427722
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,7000.0,True,0.19674645718949357
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.09481018675860255,25160.5,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.10456323261878313,12495.27,False,0.1843004952606052
+REJECT,PD calibrada >= 20%,0.35476993132335255,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,2000.0,True,0.27737424980348
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.17942944535728508,7200.0,True,0.27119840826942143
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,4600.0,True,0.2812304761927344
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,3387.65,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,2747.02,False,0.18
+REJECT,PD calibrada >= 20%,0.2649169203745012,,True,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.15357106194938477,5251.5,False,0.23137982959407405
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.23853289183132115,3374.68,False,0.3817401762463961
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08164700741323028,655.76,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08662858377134064,5256.13,False,0.18
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REJECT,PD calibrada >= 20%,0.2537932287829739,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,3154.39,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15543588882368156,5352.03,True,0.19612330056262361
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14864858211448576,10917.29,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09472039455474367,4800.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09472039455474367,3600.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1262631774994407,5900.0,True,0.21868712490174003
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REJECT,PD calibrada >= 20%,0.4185570944221592,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,18355.48,False,0.18937851653693233
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,10591.08,False,0.18
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11843367781211596,5600.0,True,0.19669864896471434
+APPROVE,Riesgo y capacidad dentro del apetito,0.11305516926420771,3651.73,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,3862.66,False,0.18399471755848673
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,4200.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,7895.71,False,0.18312058059394593
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.10357955931344313,24268.1,False,0.1840718895844442
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,11703.99,False,0.20624116118789187
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1757620037320268,3800.0,True,0.24169417933464604
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.11532171671557931,3984.43,False,0.2672030678588025
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,2700.0,True,0.21749048934609122
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,2938.81,False,0.2605027172205263
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,3655.15,False,0.22025011872253442
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,5626.03,False,0.20406777480539845
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,2755.9,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,7973.54,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.05803078157896433,4003.63,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,9545.42,False,0.18230394378859038
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,7100.0,True,0.24797567301205115
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,7042.28,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,17569.21,False,0.1855034392976207
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,3032.39,False,0.18
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,6291.85,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,8804.13,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.2089898425019386,0.0,True,0.28951797172653476
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,1372.64,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1716319253415125,4200.0,True,0.31954903779746996
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.10357955931344313,12998.45,False,0.1920958527792589
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,1200.0,True,0.2397694042600939
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17010019842363625,2100.0,True,0.2390625722273061
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,7108.83,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,4885.53,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.16876728685755563,6700.0,True,0.2645907132418558
+APPROVE,Riesgo y capacidad dentro del apetito,0.1255029305755342,14388.55,False,0.2183337621315083
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,6728.24,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,1996.0,False,0.18
+REJECT,PD calibrada >= 20%,0.3050933761101073,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,6887.01,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,3736.73,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14864858211448576,6433.96,True,0.19454593048340646
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,3083.82,False,0.2241917055585178
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,1100.0,True,0.2131796028400626
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.08086911993666611,11300.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,4210.32,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14401628565861818,1600.0,True,0.22693876957412573
+REVIEW,PD calibrada entre 18% y 20%,0.1919444388002613,18235.22,False,0.18973859171812046
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1716319253415125,4800.0,True,0.31954903779746996
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,2907.41,False,0.18
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,9185.96,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.14301524644733504,8639.0,False,0.2929469730974426
+APPROVE,Riesgo y capacidad dentro del apetito,0.09772437599861947,7240.5,False,0.22056305328554443
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.10345303619714179,6543.8,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,2200.0,True,0.22061523809636718
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.07458002607872367,14579.25,False,0.18310986408092716
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2262.35,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.1984954235421326,1500.0,True,0.34452134572476645
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,15202.74,False,0.21059937206089258
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,7781.87,False,0.1840718895844442
+REJECT,PD calibrada >= 20%,0.31898068350768116,,True,
+REJECT,PD calibrada >= 20%,0.2346745310235113,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11292209408378659,3812.02,True,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,5513.48,False,0.18512567930513157
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08662858377134064,3300.0,True,0.18013248286845956
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,0.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.10345303619714179,2135.16,True,0.256169942448863
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,12608.31,False,0.22025011872253442
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17010019842363625,0.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,12149.72,False,0.18
+REJECT,PD calibrada >= 20%,0.28645508383274343,,False,
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.10456323261878313,3452.56,False,0.25720198104242076
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.3331673641130296,12304.76,False,0.3664749211196482
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,3095.92,False,0.18
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.16262775192030632,8000.0,True,0.19779468954627916
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,4500.0,True,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,3100.0,True,0.2131796028400626
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.1757620037320268,5908.56,True,0.200847089667323
+REJECT,PD calibrada >= 20%,0.27797271303647847,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.05452509506065575,3932.74,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.10329309685804094,2400.0,True,0.19200708761307828
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,9629.27,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,9650.28,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11843367781211596,1784.82,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,2524.82,False,0.19012505936126722
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,5440.24,False,0.18399471755848673
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,5435.59,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.10456323261878313,2889.68,False,0.1843004952606052
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.05803078157896433,8700.0,True,0.1869727072779026
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,5499.47,False,0.1998704068748337
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,5348.85,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,4843.09,False,0.1840718895844442
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,5892.51,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,9898.66,False,0.18
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.12842136468819823,7196.34,False,0.2196902503070745
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,2175.07,False,0.18937851653693233
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.10329309685804094,0.0,True,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.06036269510469811,14487.36,False,0.18
+REJECT,PD calibrada >= 20%,0.2987073992799683,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.06972513957052977,2300.0,True,0.22481648974476448
+APPROVE,Riesgo y capacidad dentro del apetito,0.038717810173978205,2088.56,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,5671.33,False,0.2562875583377767
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,6331.96,False,0.1815589335047842
+REJECT,PD calibrada >= 20%,0.21076733117337357,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,6451.23,False,0.18512567930513157
+REJECT,PD calibrada >= 20%,0.31097926944080767,,True,
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.14913413691924535,14500.0,True,0.1831058489466884
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,6472.05,False,0.19367972337991202
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,8808.74,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,18776.7,False,0.19768851895769735
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,3432.55,False,0.2605027172205263
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,4329.07,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11970703531314097,8300.0,True,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.08581046069287214,6000.0,True,0.2397694042600939
+APPROVE,Riesgo y capacidad dentro del apetito,0.14913413691924535,14299.42,False,0.18
+REJECT,PD calibrada >= 20%,0.36971539330192027,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,5269.13,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,8904.15,False,0.24033349163004586
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,1100.0,True,0.1802050793654557
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,3375.1,False,0.18937851653693233
+APPROVE,Riesgo y capacidad dentro del apetito,0.05803078157896433,3207.03,False,0.19596360970387017
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,5717.55,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14864858211448576,3000.0,True,0.20606124064454195
+REJECT,PD calibrada >= 20%,0.27797271303647847,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.15811728566907743,1300.0,True,0.30698582875797437
+APPROVE,Riesgo y capacidad dentro del apetito,0.09472039455474367,7154.35,False,0.20402603938904484
+REJECT,PD calibrada >= 20%,0.21157139810318498,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.10257995658378173,10697.71,False,0.18383958191007088
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.11970703531314097,5200.0,True,0.2712796600270958
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,4152.6,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.14195730369844747,9800.0,True,0.29196350951807676
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,4808.29,False,0.18
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,11521.94,False,0.19466479612139076
+REJECT,PD calibrada >= 20%,0.2285270347601604,,True,
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,4413.16,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.09944316806769453,8999.86,False,0.2524423690357288
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,14477.87,False,0.2241917055585178
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.15313118538517564,18082.3,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,3900.0,True,0.2812304761927344
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.17942944535728508,9400.0,True,0.21559920413471073
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,5179.18,False,0.2154049551556939
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.14195730369844747,2309.6,True,0.1819939182530128
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,6641.67,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.10456323261878313,5096.71,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,6528.12,False,0.21059937206089258
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,7443.94,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,3679.65,False,0.22025011872253442
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.05803078157896433,10560.46,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.13425760662258976,3165.83,True,0.24320391407757297
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3100.75,False,0.18
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.13749984842308408,4400.0,True,0.22390992954704947
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,2960.06,False,0.21749048934609122
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,6653.87,False,0.1920958527792589
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,6929.02,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,3030.28,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,5798.35,False,0.18658027124988918
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.08581046069287214,0.0,True,0.2397694042600939
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,2994.95,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10357955931344313,7949.44,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1757620037320268,1600.0,True,0.2144627862230974
+APPROVE,Riesgo y capacidad dentro del apetito,0.1296259008660379,2110.31,False,0.19012505936126722
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1764623857195092,3300.0,True,0.24201971688242785
+REJECT,PD calibrada >= 20%,0.20108782483026755,,False,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.1097394117797793,2700.0,True,0.2620137571904828
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,5269.38,False,0.21316054249977834
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09944316806769453,2000.0,True,0.18
+REJECT,Capacidad de pago insuficiente y PD fuera del tramo automático,0.1873129824957396,,True,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.05452509506065575,2368.37,True,0.18534326418419278
+APPROVE,Riesgo y capacidad dentro del apetito,0.08940128306103798,11308.78,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.19413008407613813,4856.17,False,0.22015444205239265
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.11292209408378659,1739.94,True,0.21248618933014402
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,8790.9,False,0.18
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.09944316806769453,3700.0,True,0.2216282460238192
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,1853.24,False,0.18
+REJECT,PD calibrada >= 20%,0.3050933761101073,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.04974307356700933,3304.48,False,0.18
+REVIEW,PD calibrada entre 18% y 20%,0.18553299057473505,10981.67,False,0.1887452446730456
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,6382.12,False,0.18
+REVIEW,"Monto > S/ 20,000: revisión obligatoria",0.14401628565861818,20000.0,True,0.29387753914825143
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,9012.98,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.16217090773535875,7386.28,False,0.23537703791539472
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.06564355130520311,4429.54,True,0.18
+REJECT,PD calibrada >= 20%,0.3650013949605897,,True,
+APPROVE,Aprobado con contraoferta de monto por capacidad de pago,0.13041144168753702,4800.0,True,0.22061523809636718
+APPROVE,Riesgo y capacidad dentro del apetito,0.09481018675860255,5373.46,False,0.18
+REJECT,PD calibrada >= 20%,0.21700237651743365,,True,
+REJECT,PD calibrada >= 20%,0.2576537394487291,,True,
+APPROVE,Riesgo y capacidad dentro del apetito,0.08164700741323028,7600.94,False,0.18
+REVIEW,Sin ingreso declarado: verificar capacidad de pago en campo,0.10888339239987625,7577.31,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.04677238966639513,17037.5,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.1097394117797793,1864.05,False,0.2280091714603219
+REVIEW,Sin score de buró: re-consultar y verificar identidad,0.2089898425019386,1800.0,True,0.3542769575898021
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,4715.19,False,0.18
+APPROVE,Riesgo y capacidad dentro del apetito,0.10869101779231505,1554.05,False,0.19367972337991202
+APPROVE,Riesgo y capacidad dentro del apetito,0.08577970498027913,2786.73,False,0.18
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+REVIEW,Capacidad de pago insuficiente: evaluar plazo mayor o consolidación,0.15811728566907743,5900.0,True,0.23349291437898717
+REJECT,PD calibrada >= 20%,0.2464934787942702,,False,
+APPROVE,Riesgo y capacidad dentro del apetito,0.07458002607872367,2191.34,False,0.19466479612139076
+REVIEW,Ingreso mayormente en efectivo con ticket alto: verificar ingreso,0.08086911993666611,0.0,True,0.18
+REJECT,PD calibrada >= 20%,0.2537932287829739,,True,

@@ -1,0 +1,142 @@
+{
+  "requests": {
+    "APPROVE": {
+      "application_id": "C15-000060",
+      "age": 48,
+      "region": "Sur",
+      "channel": "agencia",
+      "employment_type": "independiente",
+      "monthly_income": 2703.33,
+      "employment_tenure_months": 34.0,
+      "bureau_score": 661.0,
+      "prior_delinquencies_24m": 1,
+      "bureau_inquiries_6m": 2,
+      "active_loans": 2,
+      "monthly_debt_payment": 949.01,
+      "savings_balance": 2222.8,
+      "new_customer_flag": 1,
+      "relationship_months": 0.0,
+      "requested_amount": 4425.54,
+      "term_months": 24,
+      "distance_to_branch_km": 21.2,
+      "household_dependents": 1,
+      "cash_income_share": 0.3672857972802572
+    },
+    "REVIEW": {
+      "application_id": "C15-000033",
+      "age": 56,
+      "region": "Centro",
+      "channel": "app",
+      "employment_type": "independiente",
+      "monthly_income": 7406.38,
+      "employment_tenure_months": 30.0,
+      "bureau_score": 659.0,
+      "prior_delinquencies_24m": 0,
+      "bureau_inquiries_6m": 3,
+      "active_loans": 1,
+      "monthly_debt_payment": 3517.1,
+      "savings_balance": 11294.77,
+      "new_customer_flag": 0,
+      "relationship_months": 15.0,
+      "requested_amount": 17682.47,
+      "term_months": 18,
+      "distance_to_branch_km": 14.6,
+      "household_dependents": 4,
+      "cash_income_share": 0.2310970719671785
+    },
+    "REJECT": {
+      "application_id": "C15-000021",
+      "age": 39,
+      "region": "Norte",
+      "channel": "agencia",
+      "employment_type": "dependiente",
+      "monthly_income": 3643.26,
+      "employment_tenure_months": 14.0,
+      "bureau_score": 487.0,
+      "prior_delinquencies_24m": 0,
+      "bureau_inquiries_6m": 2,
+      "active_loans": 1,
+      "monthly_debt_payment": 901.81,
+      "savings_balance": 2604.96,
+      "new_customer_flag": 0,
+      "relationship_months": 35.0,
+      "requested_amount": 6720.46,
+      "term_months": 60,
+      "distance_to_branch_km": 1.7,
+      "household_dependents": 0,
+      "cash_income_share": 0.8168269383226813
+    }
+  },
+  "responses": {
+    "APPROVE": {
+      "application_id": "C15-000060",
+      "pd": 0.1255,
+      "score": 604,
+      "risk_band": "C",
+      "decision": "APPROVE",
+      "reason_codes": [
+        "Score de buró bajo",
+        "Ahorro bajo frente al monto solicitado",
+        "Carga de deuda post-crédito alta frente al ingreso"
+      ],
+      "recommended_amount_or_limit": 4425.54,
+      "recommended_rate": 0.1892,
+      "motivo": "Riesgo y capacidad dentro del apetito",
+      "expected_loss": 158.12,
+      "modelo": {
+        "scorecard": "scorecard_pd_v1",
+        "calibrador": "calibrador_platt_v1",
+        "politica": "politica_decision_v1",
+        "api": "1.0.0"
+      },
+      "trace_id": "bbabec72-31b3-4125-b4ee-76a99bb51207",
+      "latencia_ms": 14.356
+    },
+    "REVIEW": {
+      "application_id": "C15-000033",
+      "pd": 0.144,
+      "score": 598,
+      "risk_band": "D",
+      "decision": "REVIEW",
+      "reason_codes": [
+        "Score de buró bajo",
+        "Carga de deuda post-crédito alta frente al ingreso"
+      ],
+      "recommended_amount_or_limit": 13600.0,
+      "recommended_rate": 0.2046,
+      "motivo": "Capacidad de pago insuficiente: evaluar plazo mayor o consolidación",
+      "expected_loss": 557.6,
+      "modelo": {
+        "scorecard": "scorecard_pd_v1",
+        "calibrador": "calibrador_platt_v1",
+        "politica": "politica_decision_v1",
+        "api": "1.0.0"
+      },
+      "trace_id": "645b1472-d9ff-423c-b768-4c37a12fec90",
+      "latencia_ms": 13.772
+    },
+    "REJECT": {
+      "application_id": "C15-000021",
+      "pd": 0.2465,
+      "score": 573,
+      "risk_band": "E",
+      "decision": "REJECT",
+      "reason_codes": [
+        "Score de buró bajo",
+        "Ahorro bajo frente al monto solicitado"
+      ],
+      "recommended_amount_or_limit": null,
+      "recommended_rate": null,
+      "motivo": "PD calibrada >= 20%",
+      "expected_loss": null,
+      "modelo": {
+        "scorecard": "scorecard_pd_v1",
+        "calibrador": "calibrador_platt_v1",
+        "politica": "politica_decision_v1",
+        "api": "1.0.0"
+      },
+      "trace_id": "74b93ad6-73f2-4f1c-9017-181fee5bcece",
+      "latencia_ms": 12.897
+    }
+  }
+}

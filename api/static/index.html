@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caja Rural 360 · Evaluación de crédito</title>
+<style>
+  :root{
+    --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --line:#e1e0d9; --bg:#fcfcfb; --card:#ffffff;
+    --blue:#2a78d6; --blue-soft:#e8f1fc; --green:#1baf7a; --amber:#eb9234; --red:#c0392b;
+    padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-sizing:border-box;
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+    --ink:#f4f3f0; --ink2:#c9c7c1; --muted:#8d8b85; --line:#2c2b28; --bg:#141312; --card:#1c1b19; --blue-soft:#1b2a3d;
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;padding:20px;background:var(--bg);color:var(--ink);line-height:1.5;
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1080px;margin:0 auto}
+  header{margin-bottom:18px}
+  h1{font-size:21px;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:13px}
+  .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:18px;align-items:start}
+  @media (max-width:860px){ .grid{grid-template-columns:1fr} }
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:0 0 12px;font-weight:600}
+  .campos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+  label{display:block;font-size:11.5px;color:var(--ink2);margin-bottom:3px}
+  input,select{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);
+               color:var(--ink);font-size:13.5px;font-family:inherit}
+  input:focus,select:focus{outline:2px solid var(--blue);outline-offset:-1px}
+  .fila{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  button{padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);
+         font-size:13px;cursor:pointer;font-family:inherit}
+  button:hover{border-color:var(--blue);color:var(--blue)}
+  button.primario{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600;padding:10px 20px}
+  button.primario:hover{filter:brightness(1.08);color:#fff}
+  .badge{display:inline-block;padding:5px 12px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:.02em}
+  .APPROVE{background:rgba(27,175,122,.15);color:var(--green)}
+  .REVIEW{background:rgba(235,146,52,.15);color:var(--amber)}
+  .REJECT{background:rgba(192,57,43,.15);color:var(--red)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin:14px 0}
+  .kpi{border:1px solid var(--line);border-radius:10px;padding:9px 11px}
+  .kpi b{display:block;font-size:18px}
+  .kpi span{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+  ul.razones{margin:6px 0 0;padding-left:18px;font-size:13px;color:var(--ink2)}
+  ul.razones li{margin-bottom:3px}
+  .barra{height:8px;background:var(--line);border-radius:999px;overflow:hidden;margin:10px 0 4px}
+  .barra div{height:100%;background:var(--blue);border-radius:999px;transition:width .35s}
+  .escala{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted)}
+  .motivo{font-size:13px;color:var(--ink2);border-left:3px solid var(--blue);padding:7px 11px;background:var(--blue-soft);
+          border-radius:0 8px 8px 0;margin-top:12px}
+  .meta{font-size:11px;color:var(--muted);margin-top:12px;border-top:1px solid var(--line);padding-top:9px;word-break:break-all}
+  .vacio{color:var(--muted);font-size:13.5px;text-align:center;padding:40px 10px}
+  .error{color:var(--red);font-size:13px;white-space:pre-wrap}
+  a{color:var(--blue)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Caja Rural 360 · Evaluación de crédito</h1>
+    <div class="sub">Microcrédito rural para independientes · scorecard PD + calibración + motor de decisión ·
+      <a href="/docs">API</a> · <a href="/health">estado</a></div>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Solicitud</h2>
+      <div class="fila" id="ejemplos">
+        <button type="button" data-ej="APPROVE">Ejemplo aprobado</button>
+        <button type="button" data-ej="REVIEW">Ejemplo en revisión</button>
+        <button type="button" data-ej="REJECT">Ejemplo rechazado</button>
+      </div>
+      <form id="form">
+        <div class="campos" id="campos"></div>
+        <div class="fila" style="margin-top:14px">
+          <button type="submit" class="primario">Evaluar solicitud</button>
+          <button type="button" id="limpiar">Limpiar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card" id="resultado">
+      <h2>Decisión</h2>
+      <div class="vacio">Carga un ejemplo o completa la solicitud y pulsa <b>Evaluar</b>.<br>
+        La respuesta es la misma que devuelve <code>POST /score</code>.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const CAMPOS = [
+  ["application_id","Id de solicitud","text","SOL-0001"],
+  ["age","Edad","number","35"],
+  ["region","Región","select","Lima|Norte|Sur|Centro|Oriente"],
+  ["channel","Canal","select","agencia|app|web|alianza"],
+  ["employment_type","Tipo de empleo","select","independiente|dependiente|temporal|empresa"],
+  ["monthly_income","Ingreso mensual (S/)","number",""],
+  ["employment_tenure_months","Antigüedad laboral (meses)","number","48"],
+  ["bureau_score","Score de buró (300-900)","number",""],
+  ["prior_delinquencies_24m","Moras previas 24m","number","0"],
+  ["bureau_inquiries_6m","Consultas al buró 6m","number","1"],
+  ["active_loans","Créditos activos","number","1"],
+  ["monthly_debt_payment","Cuota de deudas vigentes (S/)","number","300"],
+  ["savings_balance","Saldo de ahorros (S/)","number",""],
+  ["new_customer_flag","Cliente nuevo (1 = sí)","select","0|1"],
+  ["relationship_months","Meses de relación","number","24"],
+  ["requested_amount","Monto solicitado (S/)","number","8000"],
+  ["term_months","Plazo (meses)","number","24"],
+  ["distance_to_branch_km","Distancia a agencia (km)","number","10"],
+  ["household_dependents","Dependientes","number","2"],
+  ["cash_income_share","Ingreso en efectivo (0 a 1)","number","0.5"]
+];
+const OPCIONALES = ["monthly_income","bureau_score","savings_balance"];
+const fmtPct = x => (x*100).toFixed(1) + "%";
+const fmtS = x => x === null || x === undefined ? "—" : "S/ " + Number(x).toLocaleString("es-PE",{maximumFractionDigits:0});
+
+const cont = document.getElementById("campos");
+CAMPOS.forEach(([id,etiqueta,tipo,valor]) => {
+  const d = document.createElement("div");
+  if (tipo === "select") {
+    const ops = valor.split("|").map(o => `<option value="${o}">${o}</option>`).join("");
+    d.innerHTML = `<label for="${id}">${etiqueta}</label><select id="${id}" name="${id}">${ops}</select>`;
+  } else {
+    const paso = ["cash_income_share"].includes(id) ? "0.01" : "any";
+    const ph = OPCIONALES.includes(id) ? "vacío = no declarado" : "";
+    d.innerHTML = `<label for="${id}">${etiqueta}</label>
+      <input id="${id}" name="${id}" type="${tipo}" step="${paso}" value="${valor}" placeholder="${ph}">`;
+  }
+  cont.appendChild(d);
+});
+
+function leerFormulario(){
+  const cuerpo = {};
+  CAMPOS.forEach(([id]) => {
+    const el = document.getElementById(id);
+    const v = el.value.trim();
+    if (v === "") { cuerpo[id] = OPCIONALES.includes(id) ? null : ""; return; }
+    cuerpo[id] = (id === "application_id" || ["region","channel","employment_type"].includes(id)) ? v : Number(v);
+  });
+  return cuerpo;
+}
+
+function pintarError(texto){
+  document.getElementById("resultado").innerHTML =
+    `<h2>Decisión</h2><div class="error">${texto}</div>`;
+}
+
+function pintar(r){
+  const pctScore = Math.max(0, Math.min(100, (r.score - 540) / (660 - 540) * 100));
+  const razones = (r.reason_codes || []).map(x => `<li>${x}</li>`).join("") || "<li>Sin observaciones: máximo en todas las características</li>";
+  document.getElementById("resultado").innerHTML = `
+    <h2>Decisión</h2>
+    <span class="badge ${r.decision}">${r.decision}</span>
+    <div class="barra"><div style="width:${pctScore}%"></div></div>
+    <div class="escala"><span>540</span><span>score ${r.score} · banda ${r.risk_band}</span><span>660</span></div>
+    <div class="kpis">
+      <div class="kpi"><b>${fmtPct(r.pd)}</b><span>PD calibrada</span></div>
+      <div class="kpi"><b>${fmtS(r.recommended_amount_or_limit)}</b><span>Monto recomendado</span></div>
+      <div class="kpi"><b>${r.recommended_rate === null ? "—" : fmtPct(r.recommended_rate)}</b><span>Tasa sugerida</span></div>
+      <div class="kpi"><b>${r.expected_loss === null ? "—" : fmtS(r.expected_loss)}</b><span>Pérdida esperada</span></div>
+    </div>
+    <div><b style="font-size:12.5px">Razones</b><ul class="razones">${razones}</ul></div>
+    <div class="motivo">${r.motivo}</div>
+    <div class="meta">modelo ${r.modelo.scorecard} · calibrador ${r.modelo.calibrador} · política ${r.modelo.politica}<br>
+      trace ${r.trace_id} · ${r.latencia_ms} ms</div>`;
+}
+
+document.getElementById("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  try{
+    const resp = await fetch("/score", {method:"POST", headers:{"Content-Type":"application/json"},
+                                        body: JSON.stringify(leerFormulario())});
+    const data = await resp.json();
+    if (!resp.ok){
+      const detalle = Array.isArray(data.detail)
+        ? data.detail.map(d => `· ${d.loc[d.loc.length-1]}: ${d.msg}`).join("\n")
+        : JSON.stringify(data.detail);
+      pintarError("La solicitud no pasó la validación del contrato:\n" + detalle);
+      return;
+    }
+    pintar(data);
+  } catch(err){ pintarError("No se pudo contactar al servicio: " + err.message); }
+});
+
+document.getElementById("limpiar").addEventListener("click", () => {
+  CAMPOS.forEach(([id,,tipo]) => { if (tipo !== "select") document.getElementById(id).value = ""; });
+});
+
+document.querySelectorAll("#ejemplos button").forEach(b => b.addEventListener("click", async () => {
+  try{
+    const ejemplos = await (await fetch("/ejemplos")).json();
+    const ej = ejemplos[b.dataset.ej];
+    Object.entries(ej).forEach(([k,v]) => {
+      const el = document.getElementById(k);
+      if (el) el.value = (v === null ? "" : v);
+    });
+  } catch(err){ pintarError("No se pudieron cargar los ejemplos: " + err.message); }
+}));
+</script>
+</body>
+</html>

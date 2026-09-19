@@ -1,0 +1,7 @@
+criterio,situación en este modelo,puntaje
+Exposición gestionada,Decide sobre el 100% de las solicitudes del producto,3
+Automatización de la decisión,Aprueba y rechaza sin intervención humana en ~77% de los casos,3
+Impacto en resultados,Determina pérdida esperada y pricing de toda la originación,3
+Exposición regulatoria y reputacional,Decisión de crédito a personas; sujeto a fair lending,3
+Complejidad del modelo,"Scorecard lineal de 3 características, interpretable",1
+Dependencia de terceros,Una fuente externa crítica: el score de buró,2

@@ -1,0 +1,9 @@
+etapa,contenido,ejecuta,aprueba
+1. Propuesta,"Caso de negocio, población y target",Analytics,Jefatura de Riesgos
+2. Desarrollo,"Datos, features, modelo y política (6.1 a 6.9)",Analytics,—
+3. Validación independiente,Revisión metodológica y hallazgos (6.14),Validación,Validación firma
+4. Aprobación,"Decisión de uso, apetito y umbrales",Comité de Riesgos,Comité de Riesgos
+5. Despliegue,Promoción en el Model Registry y publicación de la API,Analytics + TI,Jefatura de Riesgos
+6. Monitoreo,"Datos, modelo y negocio con semáforos (6.15)",Analytics y Riesgos,—
+7. Recalibración / reentrenamiento,"Disparado por umbrales, no por calendario",Analytics,Validación
+8. Retiro o rollback,Degradación del champion y promoción del anterior,Comité de Riesgos,Comité de Riesgos

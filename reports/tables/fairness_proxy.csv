@@ -1,0 +1,6 @@
+atributo,variable,tipo,auc_medio_cv,auc_max_cv,r2_cv
+Territorio,region,categórica,0.499290963511778,0.5098123342128897,
+Informalidad del ingreso,cash_income_share,numérica,,,-0.0009683993269202773
+Ruralidad / distancia,distance_to_branch_km,numérica,,,0.0003020710084498113
+Composición del hogar,household_dependents,numérica,,,-0.0016928594923570905
+Edad,age,numérica,,,-0.0013363459110851128

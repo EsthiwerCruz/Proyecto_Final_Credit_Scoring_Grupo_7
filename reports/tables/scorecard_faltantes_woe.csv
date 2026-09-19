@@ -1,0 +1,4 @@
+variable,creditos_con_faltante,defaults,default_rate,woe_observado_dev,woe_asignado
+bureau_score,126,6,0.047619047619047616,0.7440603897876714,0.0
+dti_post,85,7,0.08235294117647059,0.1724084180046512,0.0
+ahorro_sobre_monto,255,23,0.09019607843137255,0.11610261763585103,0.0

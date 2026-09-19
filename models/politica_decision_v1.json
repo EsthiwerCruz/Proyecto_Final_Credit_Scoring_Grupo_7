@@ -1,0 +1,53 @@
+{
+  "version": "politica_decision_v1",
+  "seccion": "6.9",
+  "umbrales": {
+    "pd_approve_max": 0.18,
+    "pd_reject_min": 0.2,
+    "dti_auto_max": 0.45,
+    "dti_hard_max": 0.6,
+    "monto_revision": 20000,
+    "monto_minimo": 1000
+  },
+  "pd": "scorecard_pd_v1 + calibrador_platt_v1",
+  "economia": {
+    "costo_fondos": 0.06,
+    "gasto_operativo": 0.05,
+    "factor_saldo": 0.55,
+    "ead_sobre_monto": 0.415,
+    "lgd": 0.616,
+    "margen_objetivo": 0.05
+  },
+  "resultados_2024": {
+    "aprobacion": 0.5328,
+    "default_esperado": 0.0995,
+    "el_sobre_monto": 0.0255,
+    "margen_sobre_monto": 0.1027,
+    "resultado_sobre_monto": 0.0773,
+    "creditos": 740.0,
+    "aprobacion_final_esperada": 0.6723,
+    "default_cartera_final": 0.107,
+    "el_cartera_final": 0.0286,
+    "resultado_cartera_final": 0.0756,
+    "revision": 0.2325,
+    "rechazo": 0.2347,
+    "tasa_media_recomendada": 0.2004,
+    "monto_recomendado_sobre_solicitado": 0.8955
+  },
+  "resultados_2025_oot": {
+    "aprobacion": 0.5086,
+    "default_esperado": 0.0824,
+    "el_sobre_monto": 0.0216,
+    "margen_sobre_monto": 0.0987,
+    "resultado_sobre_monto": 0.0771,
+    "creditos": 741.0,
+    "aprobacion_final_esperada": 0.6465,
+    "default_cartera_final": 0.0929,
+    "el_cartera_final": 0.0222,
+    "resultado_cartera_final": 0.0776,
+    "revision": 0.2299,
+    "rechazo": 0.2615,
+    "tasa_media_recomendada": 0.2017,
+    "monto_recomendado_sobre_solicitado": 0.8813
+  }
+}

@@ -1,0 +1,11 @@
+control,evidencia verificable,estado_hoy
+Reproducibilidad,"`python run_all.py` reejecuta todo y regenera tablas, figuras y artefactos idénticos",Cumple
+Integridad de artefactos,El hash SHA-256 de cada artefacto coincide con el Model Registry (`/health`),Cumple
+Trazabilidad de decisiones,"Cada respuesta de la API trae `trace_id` y versión de modelo, calibrador y política",Cumple
+Separación de muestras,El OOT se usó una sola vez; ninguna decisión se ajustó con él (6.2 y 6.7),Cumple
+Leakage,Lista de variables prohibidas documentada y verificada por prueba automática (6.2 y 6.3),Cumple
+Fairness,"AIR por región, efectivo, edad y distancia, con prueba de proxy sobre los insumos (6.8)",Cumple
+Calibración vigente,Fecha del último ajuste del calibrador y resultado del último semáforo (6.7 y 6.15),Cumple
+Aprobaciones,"Acta del Comité que aprueba el champion, el apetito y los umbrales de decisión",Pendiente
+Pruebas automáticas,"La suite corre en verde y cubre contrato de la API, política y modelos",Cumple
+Plan de remediación,Cada hallazgo de validación tiene responsable y fecha comprometida,Cumple

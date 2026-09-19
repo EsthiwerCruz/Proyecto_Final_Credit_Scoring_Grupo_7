@@ -1,0 +1,12 @@
+{
+  "modelo": "scorecard_pd_v1",
+  "calibrador": {
+    "metodo": "platt",
+    "intercepto": -0.08003522819266515,
+    "pendiente": 0.7582465515344059
+  },
+  "ajustado_en": "VAL 2024",
+  "pd_media_recalibrada_oot": 0.14257273524349046,
+  "default_observado_oot": 0.13372582001682085,
+  "nota": "PD de producción = Platt(PD del scorecard). Recalibrar cuando el monitoreo lo dispare."
+}

@@ -1,0 +1,89 @@
+{
+  "variables": [
+    "bureau_score",
+    "dti_post",
+    "ahorro_sobre_monto"
+  ],
+  "intercept": -2.2168041058257395,
+  "coefs": {
+    "bureau_score": -1.037295043939964,
+    "dti_post": -1.0345079520076648,
+    "ahorro_sobre_monto": -0.8880068852879593
+  },
+  "base_score": 600,
+  "base_odds": 10.0,
+  "pdo": 20,
+  "binnings": {
+    "bureau_score": {
+      "variable": "bureau_score",
+      "kind": "numeric",
+      "edges": [
+        596.0,
+        642.0,
+        670.0,
+        698.0,
+        732.0
+      ],
+      "groups": [],
+      "woe": [
+        -1.0140641321620014,
+        -0.34687494871022234,
+        0.24054235472133217,
+        0.30905577841785914,
+        0.43390650069488573,
+        1.3157513530748854
+      ],
+      "woe_missing": 0.0,
+      "trend": "-"
+    },
+    "dti_post": {
+      "variable": "dti_post",
+      "kind": "numeric",
+      "edges": [
+        0.41309550438993403,
+        0.4925736513732754,
+        0.5931038216677949
+      ],
+      "groups": [],
+      "woe": [
+        0.2788961400851053,
+        0.07127292789187094,
+        -0.17869753748687633,
+        -0.4655648040179017
+      ],
+      "woe_missing": 0.0,
+      "trend": "+"
+    },
+    "ahorro_sobre_monto": {
+      "variable": "ahorro_sobre_monto",
+      "kind": "numeric",
+      "edges": [
+        0.12549983155621267,
+        0.5984724711439126
+      ],
+      "groups": [],
+      "woe": [
+        -0.40015848344999483,
+        -0.09608907293674879,
+        0.29318194038555523
+      ],
+      "woe_missing": 0.0,
+      "trend": "-"
+    }
+  },
+  "meta": {
+    "version": "scorecard_pd_v1",
+    "seccion": "6.5",
+    "muestra_ajuste": "DEV 2021-2023",
+    "creditos": 3443,
+    "defaults": 351,
+    "binning": {
+      "min_share": 0.05,
+      "min_bads": 15,
+      "max_tramos": 6,
+      "min_woe_gap": 0.05,
+      "fusion_por_significancia": null
+    },
+    "nota": "La PD del scorecard es de desarrollo (nivel DEV). La tabla score -> PD se recalibra en 6.7."
+  }
+}

@@ -1,0 +1,35 @@
+# Entornos virtuales (NUNCA subir: xgboost.dll pesa 177 MB y GitHub rechaza >100 MB)
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+
+# Caché de Python y de herramientas
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Credenciales y configuración local (nunca al repositorio)
+.env
+*.key
+*.pem
+secrets.json
+
+# Salidas pesadas o temporales
+*.log
+tmp/
+dist/
+build/
+*.egg-info/

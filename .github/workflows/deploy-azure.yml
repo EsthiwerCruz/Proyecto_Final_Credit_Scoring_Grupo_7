@@ -1,0 +1,28 @@
+name: Desplegar en Azure
+
+# Manual: el despliegue no se dispara solo, lo decide el equipo (gobierno de 6.14).
+on:
+  workflow_dispatch:
+    inputs:
+      nombre:
+        description: "Prefijo de los recursos"
+        default: "cajarural360"
+      region:
+        description: "Región de Azure"
+        default: "eastus"
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Requiere el secreto AZURE_CREDENTIALS en Settings > Secrets > Actions
+      # az ad sp create-for-rbac --name cajarural360-ci --role contributor \
+      #   --scopes /subscriptions/<id> --sdk-auth
+      - uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Desplegar
+        run: bash deploy/azure/deploy.sh "${{ inputs.nombre }}" "${{ inputs.region }}"
