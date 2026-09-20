@@ -6,7 +6,7 @@ Trabajo Integrador Final de **Credit Risk & Scoring Analytics 2026** (DMC Instit
 
 ## Avance
 
-Este repositorio contiene las secciones **6.1** a **6.13** del enunciado:
+Este repositorio contiene **las secciones 6.1 a 6.15** del enunciado, es decir, el alcance técnico completo:
 
 | Sección | Tema | Documento | Notebook |
 |---|---|---|---|
@@ -22,7 +22,16 @@ Este repositorio contiene las secciones **6.1** a **6.13** del enunciado:
 | 6.10 | EAD: factor de exposición para producto amortizable, coherencia con la amortización, baseline vs. modelos | `reports/10_ead.md` | `08_ead_lgd.ipynb` |
 | 6.11 | LGD: descomposición, baseline vs. modelos acotados, LGD económica descontada y downturn | `reports/11_lgd.md` | `08_ead_lgd.ipynb` |
 | 6.12 | Expected Loss por cliente y cartera, tablero por segmento, escenarios Base/Adverse/Severe y capital | `reports/12_expected_loss_stress.md` | `09_expected_loss_stress.ipynb` |
-| 6.13 | Arquitectura end-to-end, servicio FastAPI, Model Registry con hash, promoción/rollback y disparadores | `reports/13_arquitectura_api_mlops.md` | `10_api_arquitectura.ipynb` |
+| 6.13 | Arquitectura end-to-end, servicio FastAPI con interfaz web, Model Registry con hash, promoción/rollback y disparadores | `reports/13_arquitectura_api_mlops.md` | `10_api_arquitectura.ipynb` |
+| 6.14 | Materialidad, ciclo de vida, tres líneas de defensa, Model Card, validación independiente y checklist de auditoría | `reports/14_gobierno_model_risk.md` | `11_gobierno_monitoreo.ipynb` |
+| 6.15 | Monitoreo de datos, modelo y negocio con umbrales, acciones y tablero | `reports/15_monitoring.md` | `11_gobierno_monitoreo.ipynb` |
+
+Además, dos documentos consolidados que **se generan** desde los reportes de sección (`python run_all.py --documentos`):
+
+| Documento | Archivo | Qué es |
+|---|---|---|
+| Anexo de trazabilidad | `reports/16_anexo_trazabilidad.md` | Cada requisito del enunciado, entregable y control del Technical Gate contra el archivo que lo evidencia, **verificando que exista** |
+| Documento técnico | `reports/documento_tecnico.md` | Las quince secciones consolidadas con portada, decisiones, supuestos, limitaciones y anexos (unas 75 páginas) |
 
 ## Definiciones clave
 
@@ -37,6 +46,8 @@ Este repositorio contiene las secciones **6.1** a **6.13** del enunciado:
 - **Champion / Challenger (6.6):** champion = scorecard (más simple y mejor fuera de muestra); challenger = LightGBM monótono, con el mismo veto de fairness.
 - **PD de producción (6.7):** `Platt(PD del scorecard)`, calibrador ajustado en VAL (intercepto −0.08, pendiente 0.758) y probado en OOT.
 - **Severidad (6.10 y 6.11):** factor de exposición 0.415 y LGD contable 0.616, ambos baselines globales estimados con los defaults de DEV; ningún modelo los supera fuera de muestra. La LGD económica (descontada al 10%) es 0.654 y el recargo de downturn, 0.7 pp.
+- **Gobierno (6.14):** materialidad Tier 1, Model Card generada desde los artefactos, inventario con hash y validación independiente con 10 hallazgos (2 de severidad alta) y plan de remediación.
+- **Monitoreo (6.15):** 13 indicadores de datos, modelo y negocio con umbrales Verde/Ámbar/Rojo y acción asignada; tablero en `reports/dashboard_monitoreo.html`.
 - **Expected Loss y stress (6.12):** base económica de LGD con el umbral del apetito restateado a 3.34% verde; cartera 2025 con 2.99% de pérdida esperada; en Severe la política absorbe 1.5 puntos del shock reduciendo sola la aprobación. Tablero en `reports/dashboard_cartera.html`.
 - **Servicio de scoring (6.13):** FastAPI con `/score`, `/score/batch`, `/health` y `/version`; 0.18 ms por solicitud en lote y **misma PD, score y decisión que el desarrollo** sobre 200 solicitudes (sin train-serve skew).
 - **Política de crédito (6.9):** APPROVE con PD calibrada ≤ 18%, REJECT sobre 20%, contraoferta automática de monto al 45% de DTI post-crédito y revisión manual por cuatro reglas duras. En OOT 2025: 64.6% de aprobación con 9.3% de default esperado, contra 81.6% y 13.4% de la política histórica.
@@ -59,7 +70,8 @@ credit-risk-capstone/
 │   ├── 07_decision_engine.ipynb       evidencia de 6.9
 │   ├── 08_ead_lgd.ipynb               evidencia de 6.10 y 6.11
 │   ├── 09_expected_loss_stress.ipynb  evidencia de 6.12
-│   └── 10_api_arquitectura.ipynb      evidencia de 6.13
+│   ├── 10_api_arquitectura.ipynb      evidencia de 6.13
+│   └── 11_gobierno_monitoreo.ipynb    evidencia de 6.14 y 6.15
 ├── src/
 │   ├── config.py             rutas, target, split temporal, parámetros de política
 │   ├── data.py               carga, catálogo de variables, población PD, split
@@ -78,6 +90,10 @@ credit-risk-capstone/
 │   ├── severity.py           EAD y LGD: baselines segmentados, logística fraccional, LGD económica y downturn
 │   ├── portfolio.py          Expected Loss, tablero por segmento, capital IRB y motor de escenarios
 │   ├── registry.py           Model Registry: inventario, hash, promoción, rollback y disparadores
+│   ├── governance.py         materialidad, ciclo de vida, Model Card, hallazgos y checklist de auditoría
+│   ├── monitoring.py         indicadores por cosecha, umbrales, semáforos y acciones
+│   ├── traceability.py       mapa de requisitos del enunciado y generador del anexo
+│   ├── techdoc.py            consolidación de los reportes en el documento técnico
 │   └── diagrams.py           diagrama del ciclo de crédito
 ├── api/
 │   └── main.py               servicio FastAPI de scoring (uvicorn api.main:app)
@@ -87,7 +103,9 @@ credit-risk-capstone/
 │   ├── challenger_lgbm_v1.joblib challenger LightGBM monótono (6.6)
 │   ├── politica_decision_v1.json umbrales, supuestos económicos y resultados (6.9)
 │   ├── ead_lgd_v1.json           parámetros de exposición y severidad (6.10 y 6.11)
-│   └── registry.json             inventario versionado con hash SHA-256 (6.13)
+│   ├── registry.json             inventario versionado con hash SHA-256 (6.13)
+│   ├── model_card_scorecard_pd.md  Model Card del champion, generada desde los artefactos (6.14)
+│   └── ficha_ead.md · ficha_lgd.md fichas técnicas de exposición y severidad (6.14)
 ├── tests/
 │   ├── test_data.py          población, split, catálogo, rangos y apetito
 │   ├── test_features.py      calidad, faltantes, derivadas, pre-selección y pipeline
@@ -96,7 +114,9 @@ credit-risk-capstone/
 │   ├── test_pd_policy.py     folds temporales, veto, calibración, AIR, proxy y motor de decisión
 │   ├── test_severity.py      coherencia de EAD, baselines, modelos acotados, LGD económica y downturn
 │   ├── test_portfolio.py     Expected Loss, shocks sobre odds, capital IRB y tablero
-│   └── test_api.py           contrato del servicio, validaciones, consistencia y registro
+│   ├── test_api.py           contrato del servicio, validaciones, consistencia y registro
+│   ├── test_governance_monitoring.py  materialidad, hallazgos, Model Card, umbrales y semáforos
+│   └── test_despliegue.py    interfaz web, portabilidad, imagen, anexo y documento técnico
 ├── reports/
 │   ├── 01_negocio_y_arquitectura_crediticia.md
 │   ├── 02_definicion_modelo_y_poblacion.md
@@ -111,9 +131,15 @@ credit-risk-capstone/
 │   ├── 11_lgd.md
 │   ├── 12_expected_loss_stress.md
 │   ├── 13_arquitectura_api_mlops.md
+│   ├── 14_gobierno_model_risk.md
+│   ├── 15_monitoring.md
+│   ├── 16_anexo_trazabilidad.md  generado: requisitos contra evidencia verificada
+│   ├── documento_tecnico.md      generado: las 15 secciones consolidadas
+│   ├── independent_validation_report.md  informe de validación independiente (6.14)
+│   ├── dashboard_monitoreo.html  tablero de monitoreo (6.15)
 │   ├── dashboard_cartera.html  tablero autocontenido de cartera y stress (6.12)
 │   ├── revision_6.1_6.3.md     registro de la revisión: hallazgos, evidencia y cambios
-│   ├── figures/              fig01-fig34 (PNG)
+│   ├── figures/              fig01-fig35 (PNG)
 │   └── tables/               CSV citados en los reportes
 └── requirements.txt
 ```
@@ -137,7 +163,7 @@ pip install -r requirements.txt
 python run_all.py
 ```
 
-Ejecuta, en este orden: las 96 pruebas automáticas, los doce notebooks (00 → 11) y una verificación final
+Ejecuta, en este orden: las 105 pruebas automáticas, los doce notebooks (00 → 11), la generación del anexo y del documento técnico, y una verificación final
 que comprueba la integridad de los artefactos contra el Model Registry y que el servicio de scoring responde.
 Se detiene en el primer error. Toma entre 15 y 25 minutos según la máquina.
 
@@ -147,6 +173,7 @@ Variantes útiles:
 python run_all.py --tests          # solo las pruebas (~30 segundos)
 python run_all.py --notebooks      # solo los notebooks
 python run_all.py --desde 04       # retomar desde el notebook 04 en adelante
+python run_all.py --documentos     # regenerar el anexo y el documento técnico
 python run_all.py --verificar      # solo la verificación de artefactos y servicio
 ```
 
