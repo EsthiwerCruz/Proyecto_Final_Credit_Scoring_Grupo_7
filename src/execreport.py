@@ -464,6 +464,23 @@ Comité**. Que el modelo sea simple no reduce su materialidad; lo que pesa es qu
 cambios de modelo; Auditoría comprueba que todo sea reproducible y trazable. Cada decisión de crédito queda registrada con
 identificador único y la versión exacta de modelo, calibración y política que la produjo.
 
+**El semáforo del apetito con la política propuesta (cosecha 2024):**
+
+| Métrica | Tipo | Verde | Política | Estado |
+|---|---|---|---|---|
+| Aprobación final | Objetivo de negocio | ≥ 70% | {pct(r24['aprobacion_final_esperada'])} | No cumple: se escala al Comité |
+| Default 12m de la cartera | Límite de riesgo | ≤ 11% | {pct(r24['default_cartera_final'])} | Cumple |
+| Pérdida esperada / monto | Límite de riesgo | ≤ 3% (3.34% en base económica) | {pct(r24['el_cartera_final'], 2)} | Cumple |
+| Revisión manual | Restricción operativa | ≤ 20% | {pct(r24['revision'])} | Excede: se prioriza por valor esperado |
+
+**Los trece indicadores de monitoreo, por bloque:**
+
+| Bloque | Indicadores | Ejemplo de umbral y acción |
+|---|---|---|
+| Datos | PSI del score, PSI por variable, faltantes de buró, variación de volumen | PSI > 0.10: investigar el cambio de mezcla antes de tocar el modelo |
+| Modelo | Gini, KS, observado/predicho, error de calibración en ventana de 12 meses | Observado/predicho fuera de [0.85, 1.15] dos meses: recalibrar |
+| Negocio | Aprobación, default de la cosecha, pérdida esperada, cola de revisión, AIR por región y por efectivo | Pérdida esperada > 3.89%: recortar la banda 580-600 y escalar al Comité |
+
 **Qué se vigila.** Trece indicadores separados en tres bloques —datos, modelo y negocio—, cada uno con umbral y **acción
 asignada**. El orden de las acciones no es negociable: primero calibración, después punto de corte y solo al final
 reentrenamiento, porque la evidencia dice que en esta cartera el problema suele ser de nivel y no de ordenamiento.
@@ -516,7 +533,23 @@ umbral y acción asignada. Detalle en `reports/15_monitoring.md`.
 
 ---
 
-## 17. Glosario mínimo
+## 17. Las seis preguntas del Caso 15, respondidas
+
+El enunciado del caso fija seis preguntas mínimas. Esta es la respuesta corta de cada una; el desarrollo está en la
+sección indicada.
+
+| Pregunta | Respuesta | Sección |
+|---|---|---|
+| ¿Qué población se atiende automáticamente y cuál pasa a revisión manual? | 53.3% automático, 23.2% a revisión por reglas verificables y 23.5% rechazo. Sin score de buró o sin ingreso declarado nunca hay rechazo automático. | 7 |
+| ¿Qué variables explican el riesgo y cuáles no deberían usarse aunque mejoren una métrica? | Explican: buró, capacidad de pago post-crédito y ahorro sobre monto. Vetadas: región, edad, distancia, dependientes e ingreso en efectivo, incluso para los modelos challenger. | 4 |
+| ¿Cuál es el Champion y por qué es superior de forma integral? | El scorecard de tres características: mejor discriminación fuera de muestra, menor sobreajuste, explicación exacta al cliente y latencia de sub-milisegundo. | 4 |
+| ¿Qué cut-off, reglas y límites cumplen el Risk Appetite? | PD calibrada ≤ 18% automático y > 20% rechazo; DTI post-crédito 45% con contraoferta y 60% como tope con validación. Cumple los límites de riesgo; el objetivo de aprobación se escala al Comité. | 7 y 12 |
+| ¿Cómo cambia la decisión al incorporar EAD, LGD, Expected Loss y stress? | Con base económica de LGD y umbral restateado, la cartera queda en {pct(r25['el_cartera_final'], 2)} de pérdida. En el escenario severo la aprobación cae sola a {pct(esc.loc['Severe', 'aprobacion_final'])} y la política absorbe {(est.loc['Severe', 'absorbido_por_la_politica'] * 100):.1f} puntos de pérdida. | 10 |
+| ¿Cómo se desplegaría, monitorearía y gobernaría en producción? | API con interfaz y artefactos versionados con hash, 13 indicadores de monitoreo con acción y responsable, materialidad Tier 1 con validación anual y 10 hallazgos con plan de remediación. | 11 y 14 |
+
+---
+
+## 18. Glosario mínimo
 
 | Término | Qué significa aquí |
 |---|---|
@@ -531,7 +564,7 @@ umbral y acción asignada. Detalle en `reports/15_monitoring.md`.
 
 ---
 
-## 18. Dónde está cada cosa
+## 19. Dónde está cada cosa
 
 | Documento | Para qué sirve |
 |---|---|
