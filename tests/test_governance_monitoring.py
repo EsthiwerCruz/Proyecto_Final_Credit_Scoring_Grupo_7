@@ -117,3 +117,24 @@ def test_artefactos_de_gobierno_y_monitoreo_existen():
         archivo = cfg.ROOT / ruta
         if archivo.exists():
             assert archivo.stat().st_size > 500
+
+
+def test_escalera_cubre_las_seis_acciones_del_enunciado():
+    """6.15: investigar, recalibrar, reentrenar, limitar uso, rollback o retiro."""
+    acciones = " ".join(mon.escalera_de_acciones()["acción"]).lower()
+    for accion in ["investigar", "recalibrar", "reentrenar", "limitar uso", "rollback", "retiro"]:
+        assert accion in acciones
+
+
+def test_tablero_de_cartera_trae_aprobacion_por_segmento():
+    """6.12: el tablero debe mostrar approval rate por segmento."""
+    t = pd.read_csv(cfg.TABLES / "el_tablero_segmentos.csv")
+    assert "aprobacion_segmento" in t.columns
+    assert t["aprobacion_segmento"].between(0, 1).all()
+
+
+def test_ficha_inicial_tiene_los_ocho_puntos_del_capitulo_13():
+    texto = (cfg.REPORTS / "ficha_propuesta_inicial.md").read_text(encoding="utf-8").lower()
+    for punto in ["caso seleccionado", "pregunta de negocio", "target y población", "risk appetite",
+                  "hipótesis", "esquema temporal", "arquitectura conceptual", "riesgos metodológicos"]:
+        assert punto in texto, punto

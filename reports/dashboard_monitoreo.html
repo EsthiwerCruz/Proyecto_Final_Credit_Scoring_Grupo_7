@@ -409,6 +409,60 @@ table.tabla td:first-child, table.tabla th:first-child { text-align:left; }
       <td>6.8</td>
     </tr>
   </tbody>
+</table><h2>Escalera de acciones</h2><table class="dataframe tabla">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>acción</th>
+      <th>se activa cuando</th>
+      <th>decide</th>
+      <th>qué ocurre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1. Investigar</td>
+      <td>Cualquier indicador en ámbar</td>
+      <td>Analytics</td>
+      <td>Diagnóstico en 5 días hábiles; el modelo no se toca</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2. Recalibrar</td>
+      <td>Observado/predicho fuera de [0.85, 1.15] dos meses, o pérdida esperada sobre 3.34%</td>
+      <td>Analytics; aprueba Jefatura de Riesgos</td>
+      <td>Nuevo calibrador Platt con la ventana reciente; el orden del score no cambia</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3. Reentrenar</td>
+      <td>Gini bajo 0.30 dos cosechas seguidas, o PSI del score sobre 0.25 por cambio estructural</td>
+      <td>Analytics; valida Validación independiente</td>
+      <td>El modelo nuevo entra como challenger y no reemplaza sin validación</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4. Limitar uso</td>
+      <td>Falla de una fuente crítica (buró) o AIR bajo 0.75 en algún segmento</td>
+      <td>Jefatura de Riesgos</td>
+      <td>Se suspende la aprobación automática del segmento afectado: todo pasa a revisión</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5. Rollback</td>
+      <td>El champion recién promovido empeora en su primera cosecha, o falla la integridad del artefacto</td>
+      <td>Jefatura de Riesgos, registrado</td>
+      <td>Se repromueve el champion anterior en el Model Registry (registry.promote)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6. Retiro</td>
+      <td>Deterioro que no corrigen ni la recalibración ni el reentrenamiento, o cambio de producto o regulación</td>
+      <td>Comité de Riesgos</td>
+      <td>El modelo pasa a 'retirado' en el inventario y la decisión vuelve a reglas con revisión experta</td>
+    </tr>
+  </tbody>
 </table><h2>Calendario de monitoreo</h2><table class="dataframe tabla">
   <thead>
     <tr style="text-align: right;">

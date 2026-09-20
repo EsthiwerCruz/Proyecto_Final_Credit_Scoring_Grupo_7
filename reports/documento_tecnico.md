@@ -35,7 +35,7 @@ Quince secciones en el orden del enunciado, cada una con su propio resumen, evid
 Después, tres anexos: decisiones y supuestos, trazabilidad de requisitos y reproducibilidad.
 
 **Dónde está la evidencia.** Cada afirmación del documento se apoya en una tabla o figura generada por los notebooks:
-90 tablas en `reports/tables/`, 35 figuras en `reports/figures/` y 10 artefactos versionados en `models/`.
+91 tablas en `reports/tables/`, 35 figuras en `reports/figures/` y 10 artefactos versionados en `models/`.
 Nada se escribió a mano sobre los resultados.
 
 ---
@@ -1792,7 +1792,7 @@ El restateo no es un truco para pasar el semáforo, es la condición para que la
 
 ### 4. Tablero de cartera por segmento
 
-`reports/dashboard_cartera.html` es un tablero autocontenido (tablas y figuras embebidas, sin dependencias externas) que se regenera con cada corrida del notebook. Incluye exposición, PD, EAD, LGD, EL, participación, default observado, margen y resultado por segmento, más los escenarios y la concentración.
+`reports/dashboard_cartera.html` es un tablero autocontenido (tablas y figuras embebidas, sin dependencias externas) que se regenera con cada corrida del notebook. Incluye, por segmento, **tasa de aprobación** (sobre todas las solicitudes del segmento), exposición, PD, EAD, LGD, EL, participación, default observado, margen y resultado, más los escenarios y la concentración.
 
 Lo que muestra, en resumen:
 
@@ -1807,6 +1807,8 @@ Lo que muestra, en resumen:
 | Banda de score | 580-600 | 22.8% | **4.63%** | 5.43% |
 | Tramo de monto | > S/ 20,000 | 11.2% | 3.32% | 7.36% |
 | Región | Norte / Sur | 20.1% / 13.9% | 3.04% / 2.93% | 7.52% / 6.70% |
+
+**Aprobación por región:** entre 62.4% (Oriente) y 68.1% (Centro), una banda de menos de 6 puntos; por banda de score, de 96.5% sobre 640 a 62.9% en 580-600, que es exactamente el orden que el riesgo justifica.
 
 Concentración (HHI del monto): entre 0.25 y 0.31 en score, región, canal, monto y capacidad; 0.48 en ingreso en efectivo, que refleja la composición del mercado objetivo y no una decisión de la política.
 
@@ -2233,7 +2235,23 @@ El único pendiente es el acta del Comité: es un acto de gobierno de la entidad
 
 **El orden de las acciones no es arbitrario:** primero calibración, después punto de corte y solo al final reentrenamiento. La evidencia de 6.4 y 6.7 dice que en esta cartera el problema suele ser de **nivel** y no de ordenamiento, y reentrenar cuando el problema es de calibración cambia el modelo sin resolver nada.
 
-### 3. El umbral que hubo que calibrar con simulación
+### 3. Escalera de acciones: de investigar a retirar
+
+El enunciado pide que cada alerta tenga una acción entre *investigar, recalibrar, reentrenar, limitar uso, rollback o
+retiro*. Aquí están las seis, como escalera: cada peldaño se activa solo si el anterior no alcanza.
+
+| Acción | Se activa cuando | Decide | Qué ocurre |
+|---|---|---|---|
+| 1. Investigar | Cualquier indicador en ámbar | Analytics | Diagnóstico en 5 días hábiles; el modelo no se toca |
+| 2. Recalibrar | Observado/predicho fuera de [0.85, 1.15] dos meses, o pérdida esperada sobre 3.34% | Analytics; aprueba Jefatura de Riesgos | Nuevo calibrador Platt con la ventana reciente; el orden del score no cambia |
+| 3. Reentrenar | Gini bajo 0.30 dos cosechas seguidas, o PSI del score sobre 0.25 por cambio estructural | Analytics; valida Validación independiente | El modelo nuevo entra como challenger y no reemplaza sin validación |
+| 4. Limitar uso | Falla de una fuente crítica (buró) o AIR bajo 0.75 en algún segmento | Jefatura de Riesgos | Se suspende la aprobación automática del segmento afectado: todo pasa a revisión |
+| 5. Rollback | El champion recién promovido empeora en su primera cosecha, o falla la integridad del artefacto | Jefatura de Riesgos, registrado | Se repromueve el champion anterior en el Model Registry |
+| 6. Retiro | Deterioro que no corrigen ni la recalibración ni el reentrenamiento, o cambio de producto o regulación | Comité de Riesgos | El modelo pasa a "retirado" en el inventario y la decisión vuelve a reglas con revisión experta |
+
+El rollback no es teórico: `registry.promote()` ya lo implementa y el notebook 10 lo demuestra sobre una copia del registro.
+
+### 3.1 El umbral que hubo que calibrar con simulación
 
 La primera versión del tablero medía el error de calibración (ECE) **por trimestre** con umbral 0.03, y encendía rojo en dos de los cuatro trimestres de 2025. Antes de reportar eso como deterioro, se simuló cuánto ECE produce una calibración **perfecta** por puro ruido muestral:
 
@@ -2339,7 +2357,7 @@ generación de las fichas.
 |---|---|---|
 | Notebooks ejecutados | 12 | `notebooks/` |
 | Reportes de sección | 15 | `reports/01_...md` a `reports/15_...md` |
-| Tablas de resultados | 90 | `reports/tables/` |
+| Tablas de resultados | 91 | `reports/tables/` |
 | Figuras | 35 | `reports/figures/` |
 | Artefactos versionados | 10 | `models/` |
 | Tableros | 2 | `reports/dashboard_cartera.html`, `reports/dashboard_monitoreo.html` |

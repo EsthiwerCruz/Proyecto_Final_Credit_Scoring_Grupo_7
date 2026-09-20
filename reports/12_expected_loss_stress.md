@@ -55,7 +55,7 @@ El restateo no es un truco para pasar el semáforo, es la condición para que la
 
 ## 4. Tablero de cartera por segmento
 
-`reports/dashboard_cartera.html` es un tablero autocontenido (tablas y figuras embebidas, sin dependencias externas) que se regenera con cada corrida del notebook. Incluye exposición, PD, EAD, LGD, EL, participación, default observado, margen y resultado por segmento, más los escenarios y la concentración.
+`reports/dashboard_cartera.html` es un tablero autocontenido (tablas y figuras embebidas, sin dependencias externas) que se regenera con cada corrida del notebook. Incluye, por segmento, **tasa de aprobación** (sobre todas las solicitudes del segmento), exposición, PD, EAD, LGD, EL, participación, default observado, margen y resultado, más los escenarios y la concentración.
 
 Lo que muestra, en resumen:
 
@@ -70,6 +70,8 @@ Lo que muestra, en resumen:
 | Banda de score | 580-600 | 22.8% | **4.63%** | 5.43% |
 | Tramo de monto | > S/ 20,000 | 11.2% | 3.32% | 7.36% |
 | Región | Norte / Sur | 20.1% / 13.9% | 3.04% / 2.93% | 7.52% / 6.70% |
+
+**Aprobación por región:** entre 62.4% (Oriente) y 68.1% (Centro), una banda de menos de 6 puntos; por banda de score, de 96.5% sobre 640 a 62.9% en 580-600, que es exactamente el orden que el riesgo justifica.
 
 Concentración (HHI del monto): entre 0.25 y 0.31 en score, región, canal, monto y capacidad; 0.48 en ingreso en efectivo, que refleja la composición del mercado objetivo y no una decisión de la política.
 

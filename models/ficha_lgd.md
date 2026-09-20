@@ -1,6 +1,6 @@
 # Ficha técnica · LGD · severidad
 
-*Sección 6.11 · generada el 2026-09-19 desde `models/ead_lgd_v1.json`.*
+*Sección 6.11 · generada el 2026-09-20 desde `models/ead_lgd_v1.json`.*
 
 | Campo | Valor |
 |---|---|

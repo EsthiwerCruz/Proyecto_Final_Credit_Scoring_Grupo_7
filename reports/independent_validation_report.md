@@ -2,7 +2,7 @@
 
 **Modelo:** Scorecard PD · Caja Rural 360 · versión 1.0
 **Alcance:** secciones 6.1 a 6.13 del Trabajo Integrador Final
-**Fecha:** 2026-09-19
+**Fecha:** 2026-09-20
 **Conclusión:** Apto para uso con condiciones: dos hallazgos de severidad alta deben remediarse antes del despliegue.
 
 ## 1. Alcance y método

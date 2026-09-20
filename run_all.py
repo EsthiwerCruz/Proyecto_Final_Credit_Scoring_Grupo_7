@@ -80,6 +80,8 @@ def generar_documentos() -> None:
     print("  informe ejecutivo:", Path(execreport.build()).relative_to(RAIZ))
     print("  documento técnico:", Path(techdoc.build()).relative_to(RAIZ))
     print("  diccionario de features:", Path(techdoc.build_feature_dictionary()).relative_to(RAIZ))
+    import shutil  # noqa: PLC0415
+    shutil.copy(RAIZ / "models" / "model_card_scorecard_pd.md", RAIZ / "model_card.md")   # estructura sugerida (cap. 7.1)
     print("  anexo:", Path(traceability.build_annex()).relative_to(RAIZ))
 
 
