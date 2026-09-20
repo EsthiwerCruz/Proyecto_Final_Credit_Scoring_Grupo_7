@@ -75,3 +75,32 @@ def test_infraestructura_y_flujos_de_ci_presentes():
         assert (RAIZ / "deploy" / "azure" / script).exists()
     for flujo in ["tests.yml", "deploy-azure.yml"]:
         assert (RAIZ / ".github" / "workflows" / flujo).exists()
+
+
+# --------------------------------------------------------------- Anexo y documento técnico
+def test_anexo_verifica_la_evidencia_que_cita():
+    from src import traceability as tz
+
+    f = tz.build_frames()
+    req, gate = f["requisitos"], f["gate"]
+    assert len(req) >= 50 and len(f["entregables"]) == 10 and len(gate) == 5
+    assert (req["estado"] == "Cumple").all(), req[req.estado != "Cumple"]["evidencia"].tolist()
+    assert (gate["estado"] == "Cumple").all(), gate[gate.estado != "Cumple"]["evidencia"].tolist()
+    # Toda sección 6.1 a 6.15 aparece al menos una vez
+    bloques = {b.split()[0] for b in req["bloque"]}
+    assert {f"6.{i}" for i in range(1, 16)} <= bloques
+
+
+def test_documento_tecnico_consolida_las_quince_secciones():
+    import re as _re
+
+    ruta = RAIZ / "reports" / "documento_tecnico.md"
+    if not ruta.exists():
+        return
+    texto = ruta.read_text(encoding="utf-8")
+    for n in range(1, 16):
+        assert _re.search(rf"^# 6\.{n}[ ·]", texto, flags=_re.M), f"falta la sección 6.{n}"
+    assert len(texto.split()) > 20000                       # documento completo, no un índice
+    assert "Decisiones que definieron el trabajo" in texto
+    assert "Supuestos declarados" in texto and "Limitaciones conocidas" in texto
+    assert not _re.search(r"^# Sección 6\.\d+\n\n## 6\.", texto, flags=_re.M)   # sin títulos duplicados

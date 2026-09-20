@@ -6,6 +6,7 @@ Uso (desde la raíz del repositorio):
     python run_all.py --tests          # solo las pruebas automáticas (30 segundos)
     python run_all.py --notebooks      # solo los notebooks
     python run_all.py --desde 04       # retoma desde el notebook 04 en adelante
+    python run_all.py --documentos     # solo regenerar el anexo y el documento técnico
     python run_all.py --verificar      # solo la verificación de artefactos y registro
 
 Orden de dependencias: el notebook 03 deja el scorecard en `models/`, el 04 deja el
@@ -70,6 +71,16 @@ def correr_notebooks(desde: str | None = None) -> None:
     print(f"\nTiempo total de notebooks: {total/60:.1f} minutos")
 
 
+def generar_documentos() -> None:
+    """Regenera el anexo de trazabilidad y el documento técnico desde los reportes de sección."""
+    sys.path.insert(0, str(RAIZ))
+    from src import techdoc, traceability  # noqa: PLC0415
+
+    print("\n▶ Documentos consolidados")
+    print("  anexo:", Path(traceability.build_annex()).relative_to(RAIZ))
+    print("  documento técnico:", Path(techdoc.build()).relative_to(RAIZ))
+
+
 def verificar() -> None:
     """Comprueba que los artefactos existan, que el registro no esté alterado y que el servicio responda."""
     sys.path.insert(0, str(RAIZ))
@@ -101,16 +112,19 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Ejecuta el proyecto completo")
     parser.add_argument("--tests", action="store_true", help="solo las pruebas")
     parser.add_argument("--notebooks", action="store_true", help="solo los notebooks")
+    parser.add_argument("--documentos", action="store_true", help="solo regenerar anexo y documento técnico")
     parser.add_argument("--verificar", action="store_true", help="solo la verificación final")
     parser.add_argument("--desde", type=str, default=None, help="retomar desde un notebook (por ejemplo 04)")
     args = parser.parse_args()
 
-    todo = not (args.tests or args.notebooks or args.verificar)
+    todo = not (args.tests or args.notebooks or args.verificar or args.documentos)
     inicio = time.perf_counter()
     if args.tests or todo:
         correr_tests()
     if args.notebooks or todo or args.desde:
         correr_notebooks(args.desde)
+    if args.documentos or todo:
+        generar_documentos()
     if args.verificar or todo:
         verificar()
     print(f"\nTiempo total: {(time.perf_counter() - inicio)/60:.1f} minutos")
