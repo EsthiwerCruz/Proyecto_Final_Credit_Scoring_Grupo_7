@@ -33,7 +33,7 @@ Además, dos documentos consolidados que **se generan** desde los reportes de se
 | Anexo de trazabilidad | `reports/16_anexo_trazabilidad.md` | Cada requisito del enunciado, entregable y control del Technical Gate contra el archivo que lo evidencia, **verificando que exista** |
 | Documento técnico | `reports/documento_tecnico.md` | Las quince secciones consolidadas con portada, decisiones, supuestos, limitaciones y anexos (unas 75 páginas) |
 | Informe ejecutivo | `reports/informe_ejecutivo.md` | Para Gerencia y Comité: recomendación, impacto, caso económico en soles, riesgos y decisiones pedidas |
-| Presentación | `reports/presentacion.md` | Contenido de los 10 slides de sustentación; el `.pptx` se genera con `node tools/build_deck.js` |
+| Presentación | `reports/presentacion.md` | Contenido de los 10 slides de sustentación; el `.pptx` se genera con `npm install pptxgenjs && node tools/build_deck.js` |
 
 ## Definiciones clave
 
@@ -168,7 +168,7 @@ pip install -r requirements.txt
 python run_all.py
 ```
 
-Ejecuta, en este orden: las 107 pruebas automáticas, los doce notebooks (00 → 11), la generación del anexo y del documento técnico, y una verificación final
+Ejecuta, en este orden: las 110 pruebas automáticas, los doce notebooks (00 → 11), la generación del anexo y del documento técnico, y una verificación final
 que comprueba la integridad de los artefactos contra el Model Registry y que el servicio de scoring responde.
 Se detiene en el primer error. Toma entre 15 y 25 minutos según la máquina.
 

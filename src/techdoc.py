@@ -186,6 +186,19 @@ de default de 11%: la política llega a 67.2% de aprobación. Ese conflicto se r
         cuerpo = _cuerpo_seccion(cfg.REPORTS / archivo)
         # El título de la sección vuelve a nivel 1: no hace falta un encabezado envolvente.
         cuerpo = re.sub(r"^## ", "# ", cuerpo, count=1, flags=re.MULTILINE)
+        # Las figuras que la sección cita se incrustan al final: el documento se lee sin abrir el repositorio.
+        citadas = sorted(set(re.findall(r"fig\d{2}", cuerpo)))
+        ya_incrustadas = set(re.findall(r"figures/(fig\d{2})", cuerpo))
+        figuras = []
+        for fid in citadas:
+            if fid in ya_incrustadas:
+                continue
+            archivo = next(iter(sorted(cfg.FIGURES.glob(f"{fid}_*.png"))), None)
+            if archivo is not None:
+                titulo = archivo.stem.split("_", 1)[1].replace("_", " ").capitalize()
+                figuras.append(f"![{fid} · {titulo}](figures/{archivo.name}){{width=6.3in}}")
+        if figuras:
+            cuerpo += "\n\n### Figuras de la sección\n\n" + "\n\n".join(figuras)
         partes.append(f"\n{cuerpo}\n\n---\n")
 
     partes.append(f"""

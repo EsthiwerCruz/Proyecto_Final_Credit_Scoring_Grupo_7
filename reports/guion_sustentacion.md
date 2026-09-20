@@ -154,7 +154,7 @@ El enunciado exige separar cuatro cosas en cada respuesta. Usen esa estructura e
 | ¿Por qué no usaron la tasa ofrecida, si predice? | Es endógena: la fijó la política de crédito anterior. Usarla sería aprender la decisión pasada, no el riesgo. |
 | ¿Tres variables no son pocas? | Es lo que la evidencia sostiene. Agregar variables mejoraba desarrollo y empeoraba validación. La mora previa, por ejemplo, se invierte fuera de muestra. |
 | ¿Por qué el AIR de 0.74 no se corrige en el modelo? | Porque el modelo no usa la informalidad del ingreso: la diferencia viene de carga de deuda y default observado. Corregirlo en el modelo sería igualar por decreto; la vía es verificación, que sube el indicador a 0.93. |
-| ¿Cómo sé que el código hace lo que dice el informe? | `python run_all.py` reejecuta todo, 107 pruebas automáticas, y la API responde exactamente lo mismo que el desarrollo en 200 solicitudes verificadas. |
+| ¿Cómo sé que el código hace lo que dice el informe? | `python run_all.py` reejecuta todo, 110 pruebas automáticas, y la API responde exactamente lo mismo que el desarrollo en 200 solicitudes verificadas. |
 | ¿Qué harían distinto con datos reales? | Revalidar todo el marco: los datos del caso son sintéticos, la LGD no tiene la forma de una cartera real y la exposición no es coherente con el calendario de amortización. Está como hallazgo V-01 y V-10 de la validación. |
 
 ## 6. Tres frases para memorizar

@@ -737,6 +737,14 @@ Vale la pena destacar tres entradas por su riesgo de leakage:
 | Estabilidad temporal de variables y del target | §2.6 · notebook §7 · `fig09` · `calidad_estabilidad_psi.csv` |
 | Pruebas | `tests/test_features.py` |
 
+### Figuras de la sección
+
+![fig08 · Winsorizacion](figures/fig08_winsorizacion.png){width=6.3in}
+
+![fig09 · Estabilidad temporal](figures/fig09_estabilidad_temporal.png){width=6.3in}
+
+![fig10 · Features derivadas](figures/fig10_features_derivadas.png){width=6.3in}
+
 ---
 
 
@@ -862,6 +870,22 @@ La lectura importa para el apetito: el segmento que más pesa en riesgo no es un
 | Tendencias temporales | H3, H4, H9, H13 · `fig13`, `fig17` |
 | Relaciones no lineales | H5, H6 · `eda_capacidad_dti_post.csv` · `fig14` |
 | 10+ hallazgos accionables con evidencia, interpretación e impacto | 14 hallazgos en §3 · `eda_hallazgos.csv` |
+
+### Figuras de la sección
+
+![fig11 · Tamizaje variables](figures/fig11_tamizaje_variables.png){width=6.3in}
+
+![fig13 · Nivel y tendencia](figures/fig13_nivel_y_tendencia.png){width=6.3in}
+
+![fig14 · Capacidad e interaccion](figures/fig14_capacidad_e_interaccion.png){width=6.3in}
+
+![fig15 · Canal y clientes nuevos](figures/fig15_canal_y_clientes_nuevos.png){width=6.3in}
+
+![fig16 · Variables fairness](figures/fig16_variables_fairness.png){width=6.3in}
+
+![fig17 · Descomposicion perdida](figures/fig17_descomposicion_perdida.png){width=6.3in}
+
+![fig18 · Concentracion perdida](figures/fig18_concentracion_perdida.png){width=6.3in}
 
 ---
 
@@ -1079,6 +1103,12 @@ Las razones son las características que más puntos restan frente a su mejor tr
 | Scorecard final documentado | §5 · `scorecard_puntos.csv` · `models/scorecard_pd_v1.json` |
 | Escala con Base Score, Base Odds y PDO | §5 · 600 puntos = odds 10:1, PDO 20 |
 
+### Figuras de la sección
+
+![fig19 · Iv candidatas](figures/fig19_iv_candidatas.png){width=6.3in}
+
+![fig21 · Bandas score](figures/fig21_bandas_score.png){width=6.3in}
+
 ---
 
 
@@ -1171,6 +1201,10 @@ Levantar el veto (dejar entrar edad, región, distancia, dependientes y efectivo
 | Tuning razonable y controlado, con racional | §2 · `models.GRIDS` y validación temporal dentro de DEV |
 | Comparar discriminación, calibración, estabilidad, interpretabilidad y complejidad operativa | §3 · `modelos_comparacion.csv` · `fig22` |
 | Champion y al menos un Challenger, sin decidir solo por AUC | §4 · regla pre-registrada · `modelos_champion_challenger.csv` |
+
+### Figuras de la sección
+
+![fig22 · Modelos comparacion](figures/fig22_modelos_comparacion.png){width=6.3in}
 
 ---
 
@@ -1276,6 +1310,12 @@ Se reporta porque el gobierno del modelo lo necesita: el champion se eligió en 
 | Curva de calibración y PD predicha vs. default observado por bandas | §4 y §5 · `fig24` · `validacion_calibracion_diagnostico.csv` |
 | Método de recalibración probado y justificado, con antes/después | §5 · Platt vs. isotónica, ajuste en VAL y prueba en OOT · `validacion_recalibracion.csv` |
 | Estabilidad del score y de las variables con PSI | §6 · `validacion_estabilidad.csv` |
+
+### Figuras de la sección
+
+![fig23 · Deciles ganancias](figures/fig23_deciles_ganancias.png){width=6.3in}
+
+![fig24 · Calibracion](figures/fig24_calibracion.png){width=6.3in}
 
 ---
 
@@ -1388,6 +1428,12 @@ Ninguno se puede reconstruir: **el scorecard no sabe dónde vive ni cómo cobra 
 | Explicar al menos tres clientes (aprobado, rechazado y revisión) | §3 · `fairness_casos_explicados.csv` |
 | Identificar variables sensibles y proxies, y discutir discriminación indirecta | §4 y §6 · `fairness_proxy.csv` |
 | Comparar aprobación, score o PD entre al menos dos segmentos, sin conclusiones causales | §5 y §7 · `fairness_air_aprobacion.csv`, `fairness_tasas_error.csv` · `fig26` |
+
+### Figuras de la sección
+
+![fig25 · Explicabilidad global](figures/fig25_explicabilidad_global.png){width=6.3in}
+
+![fig26 · Fairness air](figures/fig26_fairness_air.png){width=6.3in}
 
 ---
 
@@ -1538,6 +1584,10 @@ En la cosecha que nunca se usó para construirla, la política mantiene la mezcl
 | Pricing por riesgo y asignación de monto, con fórmula, supuestos y restricciones | §6 · `decision_pricing_bandas.csv` |
 | Recomendar una política final, no solo escenarios | §9 · artefacto `models/politica_decision_v1.json` |
 
+### Figuras de la sección
+
+![fig27 · Tradeoff](figures/fig27_tradeoff.png){width=6.3in}
+
 ---
 
 
@@ -1629,6 +1679,12 @@ El MAE de 0.159 sobre una media de 0.41 es alto en términos relativos, pero es 
 | No forzar un CCF revolvente si no corresponde | §1 y §2 · `ccf_observed` vacío y producto sin línea |
 | Evaluar error, sesgo y estabilidad por segmentos | §5 · `ead_error_por_segmento.csv` |
 | Documentar limitaciones | §3 y §6 · `fig28` |
+
+### Figuras de la sección
+
+![fig28 · Ead coherencia](figures/fig28_ead_coherencia.png){width=6.3in}
+
+![fig29 · Ead modelos](figures/fig29_ead_modelos.png){width=6.3in}
 
 ---
 
@@ -1733,6 +1789,10 @@ La severidad **casi no cicla**: entre la mejor y la peor cosecha hay 1.9 puntos,
 | Baseline segmentado + modelo estadístico o de ML apropiado para variable acotada | §3 · logística fraccional y boosting acotado · `lgd_comparacion_modelos.csv` |
 | Discutir recuperaciones, costos, tiempo de workout y tratamiento de extremos | §2 y §5 · `fig30` · `lgd_economica.csv` |
 | Evaluar precisión, sesgo y estabilidad, incluyendo revisión por segmentos | §4 · `lgd_error_por_segmento.csv` · confirmación OOT |
+
+### Figuras de la sección
+
+![fig30 · Lgd distribucion](figures/fig30_lgd_distribucion.png){width=6.3in}
 
 ---
 
@@ -1883,6 +1943,12 @@ El capital **en soles baja** entre escenarios porque la cartera se achica más r
 | Tres escenarios (Base, Adverse, Severe) con shocks definidos y justificados | §5 · `el_escenarios.csv` · `fig33` |
 | Cuantificar impacto en EL, aprobación, rentabilidad y capital de riesgo | §5, §6 y §7 · `el_estabilizador.csv`, `el_capital.csv` |
 | Recomendación ejecutiva sobre crecimiento y segmentos | §8 |
+
+### Figuras de la sección
+
+![fig31 · El concentracion](figures/fig31_el_concentracion.png){width=6.3in}
+
+![fig33 · Escenarios](figures/fig33_escenarios.png){width=6.3in}
 
 ---
 
@@ -2077,6 +2143,10 @@ Mapa de servicios:
 | Versionado de datos/modelo, Model Registry, rollback y Champion/Challenger | §5 · `src/registry.py` · `models/registry.json` |
 | Triggers de recalibración y reentrenamiento | §6 · `mlops_disparadores.csv` |
 | Indicar cómo se llevaría a Azure u otra nube | §7 |
+
+### Figuras de la sección
+
+![fig34 · Arquitectura](figures/fig34_arquitectura.png){width=6.3in}
 
 ---
 
@@ -2325,6 +2395,10 @@ Lo que el tablero dice, leído en conjunto: **el modelo está sano y el entorno 
 | Qué acción se ejecuta ante cada alerta | §2 y §4 · `monitoreo_acciones.csv` |
 | Distinguir monitoreo de datos, de modelo y de negocio | §2 · columna `tipo` en todas las tablas y en el tablero |
 
+### Figuras de la sección
+
+![fig35 · Monitoreo](figures/fig35_monitoreo.png){width=6.3in}
+
 ---
 
 
@@ -2358,7 +2432,7 @@ generación de las fichas.
 | Notebooks ejecutados | 12 | `notebooks/` |
 | Reportes de sección | 15 | `reports/01_...md` a `reports/15_...md` |
 | Tablas de resultados | 91 | `reports/tables/` |
-| Figuras | 35 | `reports/figures/` |
+| Figuras | ['![fig35 · Monitoreo](figures/fig35_monitoreo.png){width=6.3in}'] | `reports/figures/` |
 | Artefactos versionados | 10 | `models/` |
 | Tableros | 2 | `reports/dashboard_cartera.html`, `reports/dashboard_monitoreo.html` |
 | Pruebas automáticas | 103 | `tests/` |

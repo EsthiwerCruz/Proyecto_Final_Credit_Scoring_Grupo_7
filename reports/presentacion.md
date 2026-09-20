@@ -137,7 +137,7 @@ El corte en PD calibrada funciona como **estabilizador automático**.
 - **En producción ya:** API con interfaz web, artefactos versionados con hash y misma respuesta que el desarrollo en 200
   solicitudes verificadas.
 
-*Notas:* si preguntan por reproducibilidad: `python run_all.py` reejecuta todo; 107 pruebas automáticas en verde.
+*Notas:* si preguntan por reproducibilidad: `python run_all.py` reejecuta todo; 110 pruebas automáticas en verde.
 
 ---
 

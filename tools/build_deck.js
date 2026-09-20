@@ -1,5 +1,7 @@
 const pptx = require("pptxgenjs");
-const path = "/home/claude/work/Proyecto_Final_Credit_Scoring-main/reports/figures/";
+// Rutas relativas al repositorio: funciona en cualquier máquina (npm install pptxgenjs)
+const RUTA = require("path");
+const path = RUTA.join(__dirname, "..", "reports", "figures") + RUTA.sep;
 const p = new pptx();
 p.layout = "LAYOUT_WIDE";                       // 13.3 x 7.5
 const VERDE = "2C5F2D", MUSGO = "97BC62", TIERRA = "B85042", CREMA = "F5F5F5",
@@ -173,7 +175,7 @@ bloques.forEach((b, i) => {
   s.addText(b[0], {x:x+0.25, y:y+0.2, w:5.4, h:0.5, fontSize:24, bold:true, color:VERDE, fontFace:TIT, isTextBox:true});
   s.addText(b[1], {x:x+0.25, y:y+0.78, w:5.4, h:1.1, fontSize:14, color:TINTA, fontFace:CUERPO, isTextBox:true});
 });
-s.addText("Reproducibilidad: python run_all.py reejecuta todo el proyecto · 107 pruebas automáticas en verde",
+s.addText("Reproducibilidad: python run_all.py reejecuta todo el proyecto · 110 pruebas automáticas en verde",
           {x:0.6, y:6.5, w:12.1, h:0.4, fontSize:14, bold:true, color:VERDE, fontFace:CUERPO, isTextBox:true});
 s.addNotes("El marco de gobierno está implementado, no solo descrito: registro con hash, promoción y rollback.");
 
@@ -195,4 +197,4 @@ s.addText("Prestar mejor implica prestar menos. Lo que se gana es una cartera qu
           {x:0.85, y:6.45, w:11.6, h:0.5, fontSize:15, italic:true, color:MUSGO, fontFace:CUERPO, isTextBox:true});
 s.addNotes("Cerrar pidiendo las cuatro decisiones de forma explícita.");
 
-p.writeFile({fileName: "/tmp/deck/Presentacion_Caso15_CajaRural360.pptx"}).then(() => console.log("deck generado"));
+p.writeFile({fileName: RUTA.join(__dirname, "..", "reports", "Presentacion_Caso15_CajaRural360.pptx")}).then(() => console.log("deck generado"));

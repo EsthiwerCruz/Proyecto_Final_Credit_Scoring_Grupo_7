@@ -175,7 +175,7 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 |---|---|
 | Reejecución limpia de los 12 notebooks | Sin errores; 95 de 99 archivos generados byte a byte idénticos |
 | Diferencias esperadas y documentadas | Columna de latencia de `modelos_comparacion.csv` (depende de la máquina) y fecha de generación de las tres fichas |
-| Pruebas automáticas | 103 en verde (`python run_all.py --tests`) |
+| Pruebas automáticas | 110 en verde (`python run_all.py --tests`) |
 | Integridad de artefactos | Hash SHA-256 de los 5 artefactos coincide con `models/registry.json` |
 | Consistencia desarrollo-producción | La API devuelve la misma PD, score y decisión que el desarrollo en 200 solicitudes |
 | Corrida independiente | Reproducida en Windows con Python 3.10: 95 de 96 archivos idénticos (el 96.º era un nombre con tilde, ya corregido) |
