@@ -236,3 +236,34 @@ if __name__ == "__main__":
     salida = build()
     palabras = len(open(salida, encoding="utf-8").read().split())
     print(f"Documento técnico generado: {salida} ({palabras:,} palabras)")
+
+
+def build_feature_dictionary(ruta=None) -> str:
+    """Diccionario de features (capítulo 7): variables de entrada, derivadas y su uso."""
+    ruta = cfg.REPORTS / "diccionario_features.md" if ruta is None else ruta
+    catalogo = pd.read_csv(cfg.TABLES / "catalogo_variables.csv")
+    derivadas = pd.read_csv(cfg.TABLES / "features_derivadas_doc.csv")
+    texto = f"""# Diccionario de features
+
+*Generado con `python -m src.techdoc` el {date.today().isoformat()}. Complementa `data/raw/diccionario_datos.csv`,
+que documenta los campos originales del caso.*
+
+## 1. Variables originales y su función en el modelo
+
+{catalogo.to_markdown(index=False)}
+
+## 2. Variables derivadas construidas por el equipo
+
+{derivadas.to_markdown(index=False)}
+
+## 3. Reglas de uso
+
+- Las variables marcadas como prohibidas por leakage o endogeneidad **nunca** entran a la matriz de modelado (6.2 y 6.3).
+- Las derivadas se recalculan dentro del pipeline, no se leen del archivo: así el scoring en producción reproduce
+  exactamente la transformación del entrenamiento (`src/pipeline.py`).
+- El scorecard campeón usa tres de estas variables; el resto queda disponible para challengers y monitoreo.
+"""
+    ruta = str(ruta)
+    with open(ruta, "w", encoding="utf-8") as f:
+        f.write(texto)
+    return ruta

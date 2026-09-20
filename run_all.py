@@ -79,6 +79,7 @@ def generar_documentos() -> None:
     print("\n▶ Documentos consolidados")
     print("  informe ejecutivo:", Path(execreport.build()).relative_to(RAIZ))
     print("  documento técnico:", Path(techdoc.build()).relative_to(RAIZ))
+    print("  diccionario de features:", Path(techdoc.build_feature_dictionary()).relative_to(RAIZ))
     print("  anexo:", Path(traceability.build_annex()).relative_to(RAIZ))
 
 

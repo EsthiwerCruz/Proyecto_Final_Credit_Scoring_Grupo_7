@@ -153,6 +153,49 @@ ENTREGABLES = [
 ]
 
 
+
+# Las seis preguntas mínimas que el Caso 15 exige responder (capítulo 14)
+PREGUNTAS_DEL_CASO = [
+    ("¿Qué población se atiende automáticamente y cuál pasa a revisión manual?",
+     "53.3% automático, 23.2% revisión por reglas verificables y 23.5% rechazo; sin buró o sin ingreso nunca se rechaza en automático",
+     "reports/09_decision_engine.md|reports/tables/decision_detalle_2024.csv"),
+    ("¿Qué variables explican el riesgo y cuáles no deberían usarse aunque mejoren una métrica?",
+     "Buró, capacidad de pago y ahorro explican el riesgo; región, edad, distancia, dependientes y efectivo quedan vetadas por fairness aun para los challengers",
+     "reports/05_scorecard_tradicional.md|reports/08_explainability_fairness.md|reports/tables/modelos_costo_del_veto.csv"),
+    ("¿Cuál es el Champion y por qué es superior desde una perspectiva integral?",
+     "Scorecard de 3 características: mejor Gini fuera de muestra, menor sobreajuste, explicación exacta y latencia de sub-milisegundo",
+     "reports/06_modelos_pd.md|reports/tables/modelos_champion_challenger.csv"),
+    ("¿Qué cut-off, reglas y límites cumplen el Risk Appetite?",
+     "PD calibrada ≤ 18% automático y > 20% rechazo, DTI post 45%/60% con contraoferta; default 10.7% y EL dentro del apetito, con el conflicto de aprobación escalado",
+     "reports/09_decision_engine.md|reports/tables/decision_curva_tradeoff.csv"),
+    ("¿Cómo cambia la decisión al incorporar EAD, LGD, Expected Loss y stress?",
+     "EL integrada con base económica y umbral restateado; en Severe la aprobación cae sola a 36.5% y la política absorbe 1.5 puntos de pérdida",
+     "reports/12_expected_loss_stress.md|reports/tables/el_escenarios.csv|reports/tables/el_estabilizador.csv"),
+    ("¿Cómo se desplegaría, monitorearía y gobernaría en producción?",
+     "API con interfaz y artefactos versionados con hash, 13 indicadores de monitoreo con acción asignada, materialidad Tier 1 y validación independiente con 10 hallazgos",
+     "reports/13_arquitectura_api_mlops.md|reports/14_gobierno_model_risk.md|reports/15_monitoring.md"),
+]
+
+# Criterios de una recomendación de alta calidad (capítulo 17)
+CRITERIOS_CALIDAD = [
+    ("No confundir capacidad predictiva con calidad de decisión",
+     "El Champion no se eligió por AUC: la regla premia parsimonia, calibración, explicabilidad y costo operativo", "reports/06_modelos_pd.md"),
+    ("Explicar por qué el modelo es adecuado para la entidad y no solo para el dataset",
+     "Tres variables que un asesor explica en agencia, artefacto JSON auditable y latencia sub-milisegundo", "models/model_card_scorecard_pd.md"),
+    ("Reconocer incertidumbre, limitaciones y segmentos con baja evidencia",
+     "Limitaciones declaradas en cada sección y consolidadas en el documento técnico; 10 hallazgos de validación", "reports/independent_validation_report.md"),
+    ("Cuantificar impactos: aprobación, default, EL, exposición y rentabilidad",
+     "Impacto en puntos y en soles, separando efecto selección de efecto precio", "reports/informe_ejecutivo.md"),
+    ("Distinguir causalidad de asociación",
+     "El análisis de fairness declara que sus comparaciones describen impacto, no mecanismo", "reports/08_explainability_fairness.md"),
+    ("Evitar información disponible solo después de la decisión",
+     "Variables prohibidas declaradas y verificadas por prueba automática; tasa ofrecida excluida por endógena", "reports/02_definicion_modelo_y_poblacion.md|tests/test_features.py"),
+    ("Proponer controles y acciones concretas ante deterioro",
+     "13 indicadores con umbral, acción y responsable, y disparadores de recalibración ordenados", "reports/tables/monitoreo_acciones.csv"),
+    ("Mantener trazabilidad de datos a monitoreo",
+     "Anexo verificado archivo por archivo y trace_id con versión de modelo en cada decisión", "reports/16_anexo_trazabilidad.md|api/main.py"),
+]
+
 # Checklist mínimo antes de entregar (capítulo 11 del enunciado)
 CHECKLIST_ENTREGA = [
     ("Target y population filters documentados", "reports/02_definicion_modelo_y_poblacion.md|reports/tables/waterfall_poblacion.csv"),
@@ -187,6 +230,9 @@ CHECKLIST_ENTREGA = [
     ("README de ejecución", "README.md|run_all.py"),
     ("Anexo de trazabilidad", "reports/16_anexo_trazabilidad.md|reports/tables/anexo_trazabilidad.csv"),
     ("Ficha de propuesta inicial (capítulo 13)", "reports/ficha_propuesta_inicial.md"),
+    ("Persistencia del modelo Champion y del preprocesamiento (cap. 7)", "models/scorecard_pd_v1.json|models/pipeline_preprocesamiento_v1.joblib"),
+    ("Diccionario de features (cap. 7)", "reports/diccionario_features.md|reports/tables/features_derivadas_doc.csv"),
+    ("Salida mínima del motor de decisión (cap. 16)", "reports/tables/api_ejemplos.json|api/main.py"),
 ]
 
 # (control del Technical Gate, cómo se cumple, evidencia)
@@ -225,11 +271,14 @@ def build_frames() -> dict[str, pd.DataFrame]:
     ent = pd.DataFrame(ENTREGABLES, columns=["entregable", "descripción", "evidencia"])
     gate = pd.DataFrame(TECHNICAL_GATE, columns=["control", "cómo se cumple", "evidencia"])
     chk = pd.DataFrame(CHECKLIST_ENTREGA, columns=["punto del checklist", "evidencia"])
-    for t in (req, ent, gate, chk):
+    caso = pd.DataFrame(PREGUNTAS_DEL_CASO, columns=["pregunta del Caso 15", "respuesta", "evidencia"])
+    calidad = pd.DataFrame(CRITERIOS_CALIDAD, columns=["criterio (cap. 17)", "cómo se cumple", "evidencia"])
+    for t in (req, ent, gate, chk, caso, calidad):
         estados = t["evidencia"].map(_estado)
         t["estado"] = [e[0] for e in estados]
         t["faltante"] = [e[1] for e in estados]
-    return {"requisitos": req, "entregables": ent, "gate": gate, "checklist": chk}
+    return {"requisitos": req, "entregables": ent, "gate": gate, "checklist": chk,
+            "caso": caso, "calidad": calidad}
 
 
 def build_annex(ruta=None) -> str:
@@ -237,6 +286,7 @@ def build_annex(ruta=None) -> str:
     ruta = cfg.REPORTS / "16_anexo_trazabilidad.md" if ruta is None else ruta
     f = build_frames()
     req, ent, gate, chk = f["requisitos"], f["entregables"], f["gate"], f["checklist"]
+    caso, calidad = f["caso"], f["calidad"]
     cumplen = int((req["estado"] == "Cumple").sum())
     pendientes = ent[ent["estado"] != "Cumple"]["entregable"].tolist()
 
@@ -262,6 +312,8 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 | Entregables | {len(ent)} | {int((ent['estado'] == 'Cumple').sum())} |
 | Technical Gate | {len(gate)} | {int((gate['estado'] == 'Cumple').sum())} |
 | Checklist mínimo antes de entregar (cap. 11) | {len(chk)} | {int((chk['estado'] == 'Cumple').sum())} |
+| Preguntas mínimas del Caso 15 (cap. 14) | {len(caso)} | {int((caso['estado'] == 'Cumple').sum())} |
+| Criterios de recomendación de alta calidad (cap. 17) | {len(calidad)} | {int((calidad['estado'] == 'Cumple').sum())} |
 
 {"**Entregables pendientes:** " + ", ".join(pendientes) if pendientes else "**Todos los entregables tienen evidencia en el repositorio.**"}
 
@@ -281,7 +333,15 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 
 {tabla(chk, ["punto del checklist", "evidencia", "estado"])}
 
-## 6. Evidencia de reproducibilidad
+## 6. Las seis preguntas del Caso 15, respondidas
+
+{tabla(caso, ["pregunta del Caso 15", "respuesta", "evidencia", "estado"])}
+
+## 7. Criterios de recomendación de alta calidad (capítulo 17)
+
+{tabla(calidad, ["criterio (cap. 17)", "cómo se cumple", "evidencia", "estado"])}
+
+## 8. Evidencia de reproducibilidad
 
 | Control | Resultado |
 |---|---|

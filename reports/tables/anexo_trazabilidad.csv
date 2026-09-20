@@ -31,6 +31,9 @@ Inventario de modelos,reports/tables/gobierno_inventario.csv,Cumple,,Checklist d
 README de ejecución,README.md|run_all.py,Cumple,,Checklist de entrega,,
 Anexo de trazabilidad,reports/16_anexo_trazabilidad.md|reports/tables/anexo_trazabilidad.csv,Cumple,,Checklist de entrega,,
 Ficha de propuesta inicial (capítulo 13),reports/ficha_propuesta_inicial.md,Cumple,,Checklist de entrega,,
+Persistencia del modelo Champion y del preprocesamiento (cap. 7),models/scorecard_pd_v1.json|models/pipeline_preprocesamiento_v1.joblib,Cumple,,Checklist de entrega,,
+Diccionario de features (cap. 7),reports/diccionario_features.md|reports/tables/features_derivadas_doc.csv,Cumple,,Checklist de entrega,,
+Salida mínima del motor de decisión (cap. 16),reports/tables/api_ejemplos.json|api/main.py,Cumple,,Checklist de entrega,,
 6.1 Negocio y arquitectura crediticia,notebooks/00_negocio_y_poblacion.ipynb|reports/figures/fig01_ciclo_credito.png,Cumple,,Requisito técnico,"Describir el negocio, el producto y el ciclo de crédito end-to-end",reports/01_negocio_y_arquitectura_crediticia.md §2-§4
 6.1 Negocio y arquitectura crediticia,reports/tables/risk_appetite.csv,Cumple,,Requisito técnico,Definir Risk Appetite con métricas y umbrales Verde/Ámbar/Rojo,reports/01_negocio_y_arquitectura_crediticia.md §6
 6.1 Negocio y arquitectura crediticia,reports/tables/risk_appetite_factibilidad.csv,Cumple,,Requisito técnico,Prueba de factibilidad del apetito y regla de precedencia ante conflicto,reports/01_negocio_y_arquitectura_crediticia.md §6-§7

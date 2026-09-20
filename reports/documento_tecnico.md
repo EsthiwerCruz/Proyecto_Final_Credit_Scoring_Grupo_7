@@ -35,7 +35,7 @@ Quince secciones en el orden del enunciado, cada una con su propio resumen, evid
 Después, tres anexos: decisiones y supuestos, trazabilidad de requisitos y reproducibilidad.
 
 **Dónde está la evidencia.** Cada afirmación del documento se apoya en una tabla o figura generada por los notebooks:
-90 tablas en `reports/tables/`, 35 figuras en `reports/figures/` y 9 artefactos versionados en `models/`.
+90 tablas en `reports/tables/`, 35 figuras en `reports/figures/` y 10 artefactos versionados en `models/`.
 Nada se escribió a mano sobre los resultados.
 
 ---
@@ -2341,6 +2341,6 @@ generación de las fichas.
 | Reportes de sección | 15 | `reports/01_...md` a `reports/15_...md` |
 | Tablas de resultados | 90 | `reports/tables/` |
 | Figuras | 35 | `reports/figures/` |
-| Artefactos versionados | 9 | `models/` |
+| Artefactos versionados | 10 | `models/` |
 | Tableros | 2 | `reports/dashboard_cartera.html`, `reports/dashboard_monitoreo.html` |
 | Pruebas automáticas | 103 | `tests/` |
