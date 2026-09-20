@@ -32,6 +32,7 @@ Además, dos documentos consolidados que **se generan** desde los reportes de se
 |---|---|---|
 | Anexo de trazabilidad | `reports/16_anexo_trazabilidad.md` | Cada requisito del enunciado, entregable y control del Technical Gate contra el archivo que lo evidencia, **verificando que exista** |
 | Documento técnico | `reports/documento_tecnico.md` | Las quince secciones consolidadas con portada, decisiones, supuestos, limitaciones y anexos (unas 75 páginas) |
+| Informe ejecutivo | `reports/informe_ejecutivo.md` | Para Gerencia y Comité: recomendación, impacto, caso económico en soles, riesgos y decisiones pedidas |
 
 ## Definiciones clave
 
@@ -94,6 +95,7 @@ credit-risk-capstone/
 │   ├── monitoring.py         indicadores por cosecha, umbrales, semáforos y acciones
 │   ├── traceability.py       mapa de requisitos del enunciado y generador del anexo
 │   ├── techdoc.py            consolidación de los reportes en el documento técnico
+│   ├── execreport.py         informe ejecutivo con las cifras tomadas de los artefactos
 │   └── diagrams.py           diagrama del ciclo de crédito
 ├── api/
 │   └── main.py               servicio FastAPI de scoring (uvicorn api.main:app)
@@ -135,6 +137,7 @@ credit-risk-capstone/
 │   ├── 15_monitoring.md
 │   ├── 16_anexo_trazabilidad.md  generado: requisitos contra evidencia verificada
 │   ├── documento_tecnico.md      generado: las 15 secciones consolidadas
+│   ├── informe_ejecutivo.md      generado: informe para Gerencia y Comité
 │   ├── independent_validation_report.md  informe de validación independiente (6.14)
 │   ├── dashboard_monitoreo.html  tablero de monitoreo (6.15)
 │   ├── dashboard_cartera.html  tablero autocontenido de cartera y stress (6.12)
@@ -163,7 +166,7 @@ pip install -r requirements.txt
 python run_all.py
 ```
 
-Ejecuta, en este orden: las 105 pruebas automáticas, los doce notebooks (00 → 11), la generación del anexo y del documento técnico, y una verificación final
+Ejecuta, en este orden: las 107 pruebas automáticas, los doce notebooks (00 → 11), la generación del anexo y del documento técnico, y una verificación final
 que comprueba la integridad de los artefactos contra el Model Registry y que el servicio de scoring responde.
 Se detiene en el primer error. Toma entre 15 y 25 minutos según la máquina.
 
@@ -173,7 +176,7 @@ Variantes útiles:
 python run_all.py --tests          # solo las pruebas (~30 segundos)
 python run_all.py --notebooks      # solo los notebooks
 python run_all.py --desde 04       # retomar desde el notebook 04 en adelante
-python run_all.py --documentos     # regenerar el anexo y el documento técnico
+python run_all.py --documentos     # regenerar informe ejecutivo, documento técnico y anexo
 python run_all.py --verificar      # solo la verificación de artefactos y servicio
 ```
 

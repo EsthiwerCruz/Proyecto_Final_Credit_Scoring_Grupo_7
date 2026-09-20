@@ -104,3 +104,35 @@ def test_documento_tecnico_consolida_las_quince_secciones():
     assert "Decisiones que definieron el trabajo" in texto
     assert "Supuestos declarados" in texto and "Limitaciones conocidas" in texto
     assert not _re.search(r"^# Sección 6\.\d+\n\n## 6\.", texto, flags=_re.M)   # sin títulos duplicados
+
+
+def test_informe_ejecutivo_cita_las_cifras_de_los_artefactos():
+    """El informe se genera desde los artefactos: sus cifras tienen que coincidir con ellos."""
+    import json
+
+    ruta = RAIZ / "reports" / "informe_ejecutivo.md"
+    if not ruta.exists():
+        return
+    texto = ruta.read_text(encoding="utf-8")
+    pol = json.loads((RAIZ / "models" / "politica_decision_v1.json").read_text(encoding="utf-8"))
+    r25 = pol["resultados_2025_oot"]
+    assert f"{r25['aprobacion_final_esperada']:.1%}" in texto
+    assert f"{r25['default_cartera_final']:.1%}" in texto
+    for bloque in ["Resumen ejecutivo", "Decisiones que pedimos al Comité", "El caso económico",
+                   "Riesgos y condiciones para el uso", "Glosario"]:
+        assert bloque in texto
+    assert len(texto.split()) > 3500                      # informe completo, no un resumen
+    assert texto.count("![") >= 5                          # con evidencia visual
+
+
+def test_informe_ejecutivo_separa_seleccion_de_precio():
+    """La caída de resultado se descompone: riesgo por un lado, decisión comercial por el otro."""
+    from src.execreport import _caso_economico
+
+    e = _caso_economico()
+    resultado_hist = e["margen_hist"] - e["el_hist"]
+    resultado_tasa_hist = e["margen_nuevo_tasa_hist"] - e["el_nuevo"]
+    resultado_nuevo = e["margen_nuevo"] - e["el_nuevo"]
+    assert e["el_nuevo"] / e["monto_nuevo"] < e["el_hist"] / e["monto_hist"]     # menos pérdida por sol prestado
+    assert resultado_tasa_hist < resultado_hist                                   # el volumen cuesta
+    assert resultado_nuevo < resultado_tasa_hist                                  # el precio cuesta aparte

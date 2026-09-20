@@ -6,7 +6,7 @@ Uso (desde la raíz del repositorio):
     python run_all.py --tests          # solo las pruebas automáticas (30 segundos)
     python run_all.py --notebooks      # solo los notebooks
     python run_all.py --desde 04       # retoma desde el notebook 04 en adelante
-    python run_all.py --documentos     # solo regenerar el anexo y el documento técnico
+    python run_all.py --documentos     # solo regenerar informe ejecutivo, documento técnico y anexo
     python run_all.py --verificar      # solo la verificación de artefactos y registro
 
 Orden de dependencias: el notebook 03 deja el scorecard en `models/`, el 04 deja el
@@ -72,13 +72,14 @@ def correr_notebooks(desde: str | None = None) -> None:
 
 
 def generar_documentos() -> None:
-    """Regenera el anexo de trazabilidad y el documento técnico desde los reportes de sección."""
+    """Regenera informe ejecutivo, documento técnico y anexo desde los artefactos y los reportes."""
     sys.path.insert(0, str(RAIZ))
-    from src import techdoc, traceability  # noqa: PLC0415
+    from src import execreport, techdoc, traceability  # noqa: PLC0415
 
     print("\n▶ Documentos consolidados")
-    print("  anexo:", Path(traceability.build_annex()).relative_to(RAIZ))
+    print("  informe ejecutivo:", Path(execreport.build()).relative_to(RAIZ))
     print("  documento técnico:", Path(techdoc.build()).relative_to(RAIZ))
+    print("  anexo:", Path(traceability.build_annex()).relative_to(RAIZ))
 
 
 def verificar() -> None:

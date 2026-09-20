@@ -12,10 +12,10 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 | Bloque | Requisitos | Cumplen |
 |---|---|---|
 | Secciones técnicas 6.1 a 6.15 | 55 | 55 |
-| Entregables | 10 | 8 |
+| Entregables | 10 | 9 |
 | Technical Gate | 5 | 5 |
 
-**Entregables pendientes:** 1. Informe ejecutivo, 9. Presentación ejecutiva
+**Entregables pendientes:** 9. Presentación ejecutiva
 
 ## 2. Requisitos técnicos (secciones 6.1 a 6.15)
 
@@ -81,7 +81,7 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 
 | entregable                             | descripción                                                            | evidencia                                                                                    | estado    |
 |:---------------------------------------|:-----------------------------------------------------------------------|:---------------------------------------------------------------------------------------------|:----------|
-| 1. Informe ejecutivo                   | 15 a 25 páginas para Gerencia de Riesgos                               | `reports/informe_ejecutivo.md`                                                               | Pendiente |
+| 1. Informe ejecutivo                   | 15 a 25 páginas para Gerencia de Riesgos                               | `reports/informe_ejecutivo.md`                                                               | Cumple    |
 | 2. Documento técnico del modelo        | Desarrollo completo con decisiones, supuestos, métricas y limitaciones | `reports/documento_tecnico.md`                                                               | Cumple    |
 | 3. Repositorio de código               | Código reproducible, ordenado y versionado                             | `run_all.py`<br>`src`<br>`notebooks`<br>`tests`                                              | Cumple    |
 | 4. Arquitectura de solución            | Diagrama end-to-end y descripción de entornos                          | `reports/figures/fig34_arquitectura.png`<br>`reports/13_arquitectura_api_mlops.md`           | Cumple    |

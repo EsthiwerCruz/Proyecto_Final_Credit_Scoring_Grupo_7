@@ -54,7 +54,7 @@ grupo,item,dónde se resuelve,evidencia,estado,faltante,tipo
 6.15 Monitoring,Umbrales Verde/Ámbar/Rojo por indicador,reports/15_monitoring.md §2,reports/tables/monitoreo_umbrales.csv,Cumple,,Requisito técnico
 6.15 Monitoring,Acción concreta ante cada alerta,"reports/15_monitoring.md §2, §4",reports/tables/monitoreo_acciones.csv|reports/tables/monitoreo_semaforo.csv,Cumple,,Requisito técnico
 6.15 Monitoring,"Separar monitoreo de datos, de modelo y de negocio",reports/15_monitoring.md §2,reports/tables/monitoreo_cosechas.csv,Cumple,,Requisito técnico
-1. Informe ejecutivo,15 a 25 páginas para Gerencia de Riesgos,,reports/informe_ejecutivo.md,Pendiente,reports/informe_ejecutivo.md,Entregable
+1. Informe ejecutivo,15 a 25 páginas para Gerencia de Riesgos,,reports/informe_ejecutivo.md,Cumple,,Entregable
 2. Documento técnico del modelo,"Desarrollo completo con decisiones, supuestos, métricas y limitaciones",,reports/documento_tecnico.md,Cumple,,Entregable
 3. Repositorio de código,"Código reproducible, ordenado y versionado",,run_all.py|src|notebooks|tests,Cumple,,Entregable
 4. Arquitectura de solución,Diagrama end-to-end y descripción de entornos,,reports/figures/fig34_arquitectura.png|reports/13_arquitectura_api_mlops.md,Cumple,,Entregable
