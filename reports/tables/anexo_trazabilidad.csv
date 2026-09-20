@@ -62,7 +62,7 @@ grupo,item,dónde se resuelve,evidencia,estado,faltante,tipo
 6. Model Cards e inventario,"Ficha del champion, fichas de EAD y LGD e inventario",,models/model_card_scorecard_pd.md|reports/tables/gobierno_inventario.csv,Cumple,,Entregable
 7. Informe de validación independiente,Hallazgos priorizados y plan de remediación,,reports/independent_validation_report.md,Cumple,,Entregable
 8. Dashboard de cartera y monitoreo,"Tablero con métricas de riesgo, EL, drift y semáforos",,reports/dashboard_cartera.html|reports/dashboard_monitoreo.html,Cumple,,Entregable
-9. Presentación ejecutiva,Máximo 10 slides para la sustentación,,reports/presentacion.md,Pendiente,reports/presentacion.md,Entregable
+9. Presentación ejecutiva,Máximo 10 slides para la sustentación,,reports/presentacion.md,Cumple,,Entregable
 10. Anexo de trazabilidad,"Requisito del enunciado contra sección, archivo y evidencia",,reports/16_anexo_trazabilidad.md|reports/tables/anexo_trazabilidad.csv,Cumple,,Entregable
 El pipeline corre de punta a punta sin intervención manual,"`python run_all.py` ejecuta pruebas, los 12 notebooks y la verificación final",,run_all.py,Cumple,,Technical Gate
 El target y la población coinciden con la definición oficial del caso,"Filtro `outcome_available_flag = 1` y target `default_12m_flag`, verificados por prueba automática",,src/data.py|tests/test_data.py,Cumple,,Technical Gate

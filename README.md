@@ -33,6 +33,7 @@ Además, dos documentos consolidados que **se generan** desde los reportes de se
 | Anexo de trazabilidad | `reports/16_anexo_trazabilidad.md` | Cada requisito del enunciado, entregable y control del Technical Gate contra el archivo que lo evidencia, **verificando que exista** |
 | Documento técnico | `reports/documento_tecnico.md` | Las quince secciones consolidadas con portada, decisiones, supuestos, limitaciones y anexos (unas 75 páginas) |
 | Informe ejecutivo | `reports/informe_ejecutivo.md` | Para Gerencia y Comité: recomendación, impacto, caso económico en soles, riesgos y decisiones pedidas |
+| Presentación | `reports/presentacion.md` | Contenido de los 10 slides de sustentación; el `.pptx` se genera con `node tools/build_deck.js` |
 
 ## Definiciones clave
 
@@ -138,6 +139,7 @@ credit-risk-capstone/
 │   ├── 16_anexo_trazabilidad.md  generado: requisitos contra evidencia verificada
 │   ├── documento_tecnico.md      generado: las 15 secciones consolidadas
 │   ├── informe_ejecutivo.md      generado: informe para Gerencia y Comité
+│   ├── presentacion.md           contenido de los 10 slides de sustentación
 │   ├── independent_validation_report.md  informe de validación independiente (6.14)
 │   ├── dashboard_monitoreo.html  tablero de monitoreo (6.15)
 │   ├── dashboard_cartera.html  tablero autocontenido de cartera y stress (6.12)

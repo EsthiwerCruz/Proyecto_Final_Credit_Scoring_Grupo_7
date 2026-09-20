@@ -12,10 +12,10 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 | Bloque | Requisitos | Cumplen |
 |---|---|---|
 | Secciones técnicas 6.1 a 6.15 | 55 | 55 |
-| Entregables | 10 | 9 |
+| Entregables | 10 | 10 |
 | Technical Gate | 5 | 5 |
 
-**Entregables pendientes:** 9. Presentación ejecutiva
+**Todos los entregables tienen evidencia en el repositorio.**
 
 ## 2. Requisitos técnicos (secciones 6.1 a 6.15)
 
@@ -79,18 +79,18 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 
 ## 3. Entregables
 
-| entregable                             | descripción                                                            | evidencia                                                                                    | estado    |
-|:---------------------------------------|:-----------------------------------------------------------------------|:---------------------------------------------------------------------------------------------|:----------|
-| 1. Informe ejecutivo                   | 15 a 25 páginas para Gerencia de Riesgos                               | `reports/informe_ejecutivo.md`                                                               | Cumple    |
-| 2. Documento técnico del modelo        | Desarrollo completo con decisiones, supuestos, métricas y limitaciones | `reports/documento_tecnico.md`                                                               | Cumple    |
-| 3. Repositorio de código               | Código reproducible, ordenado y versionado                             | `run_all.py`<br>`src`<br>`notebooks`<br>`tests`                                              | Cumple    |
-| 4. Arquitectura de solución            | Diagrama end-to-end y descripción de entornos                          | `reports/figures/fig34_arquitectura.png`<br>`reports/13_arquitectura_api_mlops.md`           | Cumple    |
-| 5. API / servicio de scoring           | Servicio local funcional y evidencia de al menos 3 consultas           | `api/main.py`<br>`reports/tables/api_ejemplos.json`<br>`reports/tables/api_consistencia.csv` | Cumple    |
-| 6. Model Cards e inventario            | Ficha del champion, fichas de EAD y LGD e inventario                   | `models/model_card_scorecard_pd.md`<br>`reports/tables/gobierno_inventario.csv`              | Cumple    |
-| 7. Informe de validación independiente | Hallazgos priorizados y plan de remediación                            | `reports/independent_validation_report.md`                                                   | Cumple    |
-| 8. Dashboard de cartera y monitoreo    | Tablero con métricas de riesgo, EL, drift y semáforos                  | `reports/dashboard_cartera.html`<br>`reports/dashboard_monitoreo.html`                       | Cumple    |
-| 9. Presentación ejecutiva              | Máximo 10 slides para la sustentación                                  | `reports/presentacion.md`                                                                    | Pendiente |
-| 10. Anexo de trazabilidad              | Requisito del enunciado contra sección, archivo y evidencia            | `reports/16_anexo_trazabilidad.md`<br>`reports/tables/anexo_trazabilidad.csv`                | Cumple    |
+| entregable                             | descripción                                                            | evidencia                                                                                    | estado   |
+|:---------------------------------------|:-----------------------------------------------------------------------|:---------------------------------------------------------------------------------------------|:---------|
+| 1. Informe ejecutivo                   | 15 a 25 páginas para Gerencia de Riesgos                               | `reports/informe_ejecutivo.md`                                                               | Cumple   |
+| 2. Documento técnico del modelo        | Desarrollo completo con decisiones, supuestos, métricas y limitaciones | `reports/documento_tecnico.md`                                                               | Cumple   |
+| 3. Repositorio de código               | Código reproducible, ordenado y versionado                             | `run_all.py`<br>`src`<br>`notebooks`<br>`tests`                                              | Cumple   |
+| 4. Arquitectura de solución            | Diagrama end-to-end y descripción de entornos                          | `reports/figures/fig34_arquitectura.png`<br>`reports/13_arquitectura_api_mlops.md`           | Cumple   |
+| 5. API / servicio de scoring           | Servicio local funcional y evidencia de al menos 3 consultas           | `api/main.py`<br>`reports/tables/api_ejemplos.json`<br>`reports/tables/api_consistencia.csv` | Cumple   |
+| 6. Model Cards e inventario            | Ficha del champion, fichas de EAD y LGD e inventario                   | `models/model_card_scorecard_pd.md`<br>`reports/tables/gobierno_inventario.csv`              | Cumple   |
+| 7. Informe de validación independiente | Hallazgos priorizados y plan de remediación                            | `reports/independent_validation_report.md`                                                   | Cumple   |
+| 8. Dashboard de cartera y monitoreo    | Tablero con métricas de riesgo, EL, drift y semáforos                  | `reports/dashboard_cartera.html`<br>`reports/dashboard_monitoreo.html`                       | Cumple   |
+| 9. Presentación ejecutiva              | Máximo 10 slides para la sustentación                                  | `reports/presentacion.md`                                                                    | Cumple   |
+| 10. Anexo de trazabilidad              | Requisito del enunciado contra sección, archivo y evidencia            | `reports/16_anexo_trazabilidad.md`<br>`reports/tables/anexo_trazabilidad.csv`                | Cumple   |
 
 ## 4. Technical Gate
 
