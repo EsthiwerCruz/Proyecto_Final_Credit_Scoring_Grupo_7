@@ -152,6 +152,43 @@ ENTREGABLES = [
      "reports/16_anexo_trazabilidad.md|reports/tables/anexo_trazabilidad.csv"),
 ]
 
+
+# Checklist mínimo antes de entregar (capítulo 11 del enunciado)
+CHECKLIST_ENTREGA = [
+    ("Target y population filters documentados", "reports/02_definicion_modelo_y_poblacion.md|reports/tables/waterfall_poblacion.csv"),
+    ("Split temporal Development/Validation/OOT reproducible", "reports/tables/split_temporal.csv|src/config.py"),
+    ("Lista de variables prohibidas por leakage", "src/data.py|reports/02_definicion_modelo_y_poblacion.md"),
+    ("Data Quality Report", "reports/03_data_strategy_calidad_features.md|reports/tables/calidad_reglas_consistencia.csv"),
+    ("10+ insights de EDA", "reports/04_eda_orientado_a_riesgo.md|reports/tables/eda_hallazgos.csv"),
+    ("WOE/IV y scorecard", "reports/tables/scorecard_tramos_woe.csv|models/scorecard_pd_v1.json"),
+    ("4 modelos PD mínimos", "reports/tables/modelos_comparacion.csv"),
+    ("Champion + Challenger", "reports/tables/modelos_champion_challenger.csv|models/challenger_lgbm_v1.joblib"),
+    ("AUC, Gini, KS, Brier, Lift/Gains y deciles", "reports/tables/validacion_metricas.csv|reports/tables/validacion_deciles_oot.csv"),
+    ("Calibración y OOT", "reports/tables/validacion_recalibracion.csv|models/calibrador_platt_v1.json"),
+    ("SHAP global y local", "reports/tables/fairness_shap_global.csv|reports/tables/fairness_casos_explicados.csv"),
+    ("Análisis de fairness y proxies", "reports/tables/fairness_air_aprobacion.csv|reports/tables/fairness_proxy.csv"),
+    ("Cut-off y curva risk-return", "reports/tables/decision_curva_tradeoff.csv|reports/figures/fig27_tradeoff.png"),
+    ("Decision Engine con APPROVE/REVIEW/REJECT", "src/decision.py|reports/tables/decision_detalle_2024.csv"),
+    ("Risk Appetite", "reports/tables/risk_appetite.csv|src/risk_appetite.py"),
+    ("Pricing, límite o monto cuando aplique", "reports/tables/decision_pricing_bandas.csv"),
+    ("EAD baseline + modelo", "reports/tables/ead_comparacion_modelos.csv|models/ead_lgd_v1.json"),
+    ("LGD baseline + modelo", "reports/tables/lgd_comparacion_modelos.csv|models/ficha_lgd.md"),
+    ("EL por cliente y cartera", "src/portfolio.py|reports/tables/el_concentracion_deciles.csv"),
+    ("Stress Base/Adverse/Severe", "reports/tables/el_escenarios.csv"),
+    ("Dashboard de cartera", "reports/dashboard_cartera.html|reports/dashboard_monitoreo.html"),
+    ("Arquitectura end-to-end", "reports/figures/fig34_arquitectura.png|reports/13_arquitectura_api_mlops.md"),
+    ("API funcional", "api/main.py|api/static/index.html|reports/tables/api_ejemplos.json"),
+    ("Artefacto/modelo persistido", "models/scorecard_pd_v1.json|models/registry.json"),
+    ("Model Registry y versionado", "src/registry.py|reports/tables/mlops_inventario_modelos.csv"),
+    ("Plan de monitoring con semáforos", "reports/tables/monitoreo_umbrales.csv|reports/tables/monitoreo_semaforo.csv"),
+    ("Model Card", "models/model_card_scorecard_pd.md"),
+    ("Inventario de modelos", "reports/tables/gobierno_inventario.csv"),
+    ("5+ findings de validación independiente", "reports/independent_validation_report.md|reports/tables/gobierno_hallazgos_validacion.csv"),
+    ("README de ejecución", "README.md|run_all.py"),
+    ("Anexo de trazabilidad", "reports/16_anexo_trazabilidad.md|reports/tables/anexo_trazabilidad.csv"),
+    ("Ficha de propuesta inicial (capítulo 13)", "reports/ficha_propuesta_inicial.md"),
+]
+
 # (control del Technical Gate, cómo se cumple, evidencia)
 TECHNICAL_GATE = [
     ("El pipeline corre de punta a punta sin intervención manual",
@@ -187,18 +224,19 @@ def build_frames() -> dict[str, pd.DataFrame]:
     req = pd.DataFrame(REQUISITOS, columns=["bloque", "requisito", "dónde se resuelve", "evidencia"])
     ent = pd.DataFrame(ENTREGABLES, columns=["entregable", "descripción", "evidencia"])
     gate = pd.DataFrame(TECHNICAL_GATE, columns=["control", "cómo se cumple", "evidencia"])
-    for t in (req, ent, gate):
+    chk = pd.DataFrame(CHECKLIST_ENTREGA, columns=["punto del checklist", "evidencia"])
+    for t in (req, ent, gate, chk):
         estados = t["evidencia"].map(_estado)
         t["estado"] = [e[0] for e in estados]
         t["faltante"] = [e[1] for e in estados]
-    return {"requisitos": req, "entregables": ent, "gate": gate}
+    return {"requisitos": req, "entregables": ent, "gate": gate, "checklist": chk}
 
 
 def build_annex(ruta=None) -> str:
     """Genera `reports/16_anexo_trazabilidad.md` y su CSV, con el estado verificado."""
     ruta = cfg.REPORTS / "16_anexo_trazabilidad.md" if ruta is None else ruta
     f = build_frames()
-    req, ent, gate = f["requisitos"], f["entregables"], f["gate"]
+    req, ent, gate, chk = f["requisitos"], f["entregables"], f["gate"], f["checklist"]
     cumplen = int((req["estado"] == "Cumple").sum())
     pendientes = ent[ent["estado"] != "Cumple"]["entregable"].tolist()
 
@@ -223,6 +261,7 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 | Secciones técnicas 6.1 a 6.15 | {len(req)} | {cumplen} |
 | Entregables | {len(ent)} | {int((ent['estado'] == 'Cumple').sum())} |
 | Technical Gate | {len(gate)} | {int((gate['estado'] == 'Cumple').sum())} |
+| Checklist mínimo antes de entregar (cap. 11) | {len(chk)} | {int((chk['estado'] == 'Cumple').sum())} |
 
 {"**Entregables pendientes:** " + ", ".join(pendientes) if pendientes else "**Todos los entregables tienen evidencia en el repositorio.**"}
 
@@ -238,7 +277,11 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 
 {tabla(gate, ["control", "cómo se cumple", "evidencia", "estado"])}
 
-## 5. Evidencia de reproducibilidad
+## 5. Checklist mínimo antes de entregar (capítulo 11)
+
+{tabla(chk, ["punto del checklist", "evidencia", "estado"])}
+
+## 6. Evidencia de reproducibilidad
 
 | Control | Resultado |
 |---|---|
@@ -252,7 +295,8 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
     ruta = str(ruta)
     with open(ruta, "w", encoding="utf-8") as fh:
         fh.write(texto)
-    salida = pd.concat([req.assign(tipo="Requisito técnico").rename(columns={"bloque": "grupo", "requisito": "item"}),
+    salida = pd.concat([chk.assign(tipo="Checklist de entrega").rename(columns={"punto del checklist": "grupo"}).assign(item=""),
+                        req.assign(tipo="Requisito técnico").rename(columns={"bloque": "grupo", "requisito": "item"}),
                         ent.assign(tipo="Entregable").rename(columns={"entregable": "grupo", "descripción": "item"}),
                         gate.assign(tipo="Technical Gate").rename(columns={"control": "grupo", "cómo se cumple": "item"})],
                        ignore_index=True)

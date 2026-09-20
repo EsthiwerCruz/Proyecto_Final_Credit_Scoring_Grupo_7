@@ -14,6 +14,7 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 | Secciones técnicas 6.1 a 6.15 | 55 | 55 |
 | Entregables | 10 | 10 |
 | Technical Gate | 5 | 5 |
+| Checklist mínimo antes de entregar (cap. 11) | 32 | 32 |
 
 **Todos los entregables tienen evidencia en el repositorio.**
 
@@ -102,7 +103,44 @@ cada archivo citado exista y marca **Cumple**, **Parcial** (falta parte de la ev
 | El champion se ejecuta desde su artefacto versionado                  | Scorecard en JSON con hash registrado; la API lo carga y verifica integridad                       | `models/scorecard_pd_v1.json`<br>`models/registry.json`<br>`tests/test_api.py` | Cumple   |
 | Los resultados son reproducibles                                      | Semilla fija, versiones ancladas y reejecución limpia que regenera salidas idénticas               | `requirements.txt`<br>`src/config.py`<br>`tests/test_despliegue.py`            | Cumple   |
 
-## 5. Evidencia de reproducibilidad
+## 5. Checklist mínimo antes de entregar (capítulo 11)
+
+| punto del checklist                                    | evidencia                                                                                          | estado   |
+|:-------------------------------------------------------|:---------------------------------------------------------------------------------------------------|:---------|
+| Target y population filters documentados               | `reports/02_definicion_modelo_y_poblacion.md`<br>`reports/tables/waterfall_poblacion.csv`          | Cumple   |
+| Split temporal Development/Validation/OOT reproducible | `reports/tables/split_temporal.csv`<br>`src/config.py`                                             | Cumple   |
+| Lista de variables prohibidas por leakage              | `src/data.py`<br>`reports/02_definicion_modelo_y_poblacion.md`                                     | Cumple   |
+| Data Quality Report                                    | `reports/03_data_strategy_calidad_features.md`<br>`reports/tables/calidad_reglas_consistencia.csv` | Cumple   |
+| 10+ insights de EDA                                    | `reports/04_eda_orientado_a_riesgo.md`<br>`reports/tables/eda_hallazgos.csv`                       | Cumple   |
+| WOE/IV y scorecard                                     | `reports/tables/scorecard_tramos_woe.csv`<br>`models/scorecard_pd_v1.json`                         | Cumple   |
+| 4 modelos PD mínimos                                   | `reports/tables/modelos_comparacion.csv`                                                           | Cumple   |
+| Champion + Challenger                                  | `reports/tables/modelos_champion_challenger.csv`<br>`models/challenger_lgbm_v1.joblib`             | Cumple   |
+| AUC, Gini, KS, Brier, Lift/Gains y deciles             | `reports/tables/validacion_metricas.csv`<br>`reports/tables/validacion_deciles_oot.csv`            | Cumple   |
+| Calibración y OOT                                      | `reports/tables/validacion_recalibracion.csv`<br>`models/calibrador_platt_v1.json`                 | Cumple   |
+| SHAP global y local                                    | `reports/tables/fairness_shap_global.csv`<br>`reports/tables/fairness_casos_explicados.csv`        | Cumple   |
+| Análisis de fairness y proxies                         | `reports/tables/fairness_air_aprobacion.csv`<br>`reports/tables/fairness_proxy.csv`                | Cumple   |
+| Cut-off y curva risk-return                            | `reports/tables/decision_curva_tradeoff.csv`<br>`reports/figures/fig27_tradeoff.png`               | Cumple   |
+| Decision Engine con APPROVE/REVIEW/REJECT              | `src/decision.py`<br>`reports/tables/decision_detalle_2024.csv`                                    | Cumple   |
+| Risk Appetite                                          | `reports/tables/risk_appetite.csv`<br>`src/risk_appetite.py`                                       | Cumple   |
+| Pricing, límite o monto cuando aplique                 | `reports/tables/decision_pricing_bandas.csv`                                                       | Cumple   |
+| EAD baseline + modelo                                  | `reports/tables/ead_comparacion_modelos.csv`<br>`models/ead_lgd_v1.json`                           | Cumple   |
+| LGD baseline + modelo                                  | `reports/tables/lgd_comparacion_modelos.csv`<br>`models/ficha_lgd.md`                              | Cumple   |
+| EL por cliente y cartera                               | `src/portfolio.py`<br>`reports/tables/el_concentracion_deciles.csv`                                | Cumple   |
+| Stress Base/Adverse/Severe                             | `reports/tables/el_escenarios.csv`                                                                 | Cumple   |
+| Dashboard de cartera                                   | `reports/dashboard_cartera.html`<br>`reports/dashboard_monitoreo.html`                             | Cumple   |
+| Arquitectura end-to-end                                | `reports/figures/fig34_arquitectura.png`<br>`reports/13_arquitectura_api_mlops.md`                 | Cumple   |
+| API funcional                                          | `api/main.py`<br>`api/static/index.html`<br>`reports/tables/api_ejemplos.json`                     | Cumple   |
+| Artefacto/modelo persistido                            | `models/scorecard_pd_v1.json`<br>`models/registry.json`                                            | Cumple   |
+| Model Registry y versionado                            | `src/registry.py`<br>`reports/tables/mlops_inventario_modelos.csv`                                 | Cumple   |
+| Plan de monitoring con semáforos                       | `reports/tables/monitoreo_umbrales.csv`<br>`reports/tables/monitoreo_semaforo.csv`                 | Cumple   |
+| Model Card                                             | `models/model_card_scorecard_pd.md`                                                                | Cumple   |
+| Inventario de modelos                                  | `reports/tables/gobierno_inventario.csv`                                                           | Cumple   |
+| 5+ findings de validación independiente                | `reports/independent_validation_report.md`<br>`reports/tables/gobierno_hallazgos_validacion.csv`   | Cumple   |
+| README de ejecución                                    | `README.md`<br>`run_all.py`                                                                        | Cumple   |
+| Anexo de trazabilidad                                  | `reports/16_anexo_trazabilidad.md`<br>`reports/tables/anexo_trazabilidad.csv`                      | Cumple   |
+| Ficha de propuesta inicial (capítulo 13)               | `reports/ficha_propuesta_inicial.md`                                                               | Cumple   |
+
+## 6. Evidencia de reproducibilidad
 
 | Control | Resultado |
 |---|---|
