@@ -12,3 +12,4 @@ joblib==1.6.0
 matplotlib==3.10.7
 notebook
 pytest
+tabulate
